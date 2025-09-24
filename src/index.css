@@ -9,32 +9,43 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 19% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 19% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 19% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 186 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 186 25% 95%;
+    --secondary-foreground: 186 100% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 186 15% 96%;
+    --muted-foreground: 210 19% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 186 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 186 25% 90%;
+    --input: 186 25% 90%;
+    --ring: 186 100% 50%;
+
+    /* Medical theme colors */
+    --medical-primary: 186 100% 50%;
+    --medical-secondary: 186 80% 45%;
+    --medical-light: 186 50% 90%;
+    --medical-gradient: linear-gradient(135deg, hsl(186 100% 50%), hsl(186 80% 45%));
+    --medical-gradient-soft: linear-gradient(135deg, hsl(186 30% 95%), hsl(186 20% 98%));
+    
+    /* Shadows */
+    --shadow-medical: 0 10px 40px -10px hsl(186 100% 50% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(186 30% 20% / 0.1);
 
     --radius: 0.5rem;
 
@@ -99,7 +110,43 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-medical {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground;
+    box-shadow: var(--shadow-medical);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-medical:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px -10px hsl(186 100% 50% / 0.4);
+  }
+  
+  .card-medical {
+    @apply bg-card border border-border/50;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-medical:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medical);
+  }
+  
+  .gradient-medical {
+    background: var(--medical-gradient);
+  }
+  
+  .gradient-medical-soft {
+    background: var(--medical-gradient-soft);
   }
 }
