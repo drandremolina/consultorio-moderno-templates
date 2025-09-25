@@ -12,16 +12,16 @@ const Header = () => {
         <div className="hidden md:flex items-center justify-between py-2 text-sm text-muted-foreground border-b border-border/30">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-primary" />
-              <span>(11) 99999-9999</span>
+              <Phone className="h-4 w-4 text-cyan-500" />
+              <span>(11) 3258-3636</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-primary" />
-              <span>Av. Paulista, 1000 - São Paulo</span>
+              <MapPin className="h-4 w-4 text-cyan-500" />
+              <span>Rua Adma Jafet, 74, cj 161 - Bela Vista</span>
             </div>
           </div>
-          <div className="text-primary font-medium">
-            Seg - Sex: 8h às 18h | Sáb: 8h às 12h
+          <div className="text-cyan-500 font-medium">
+            Seg - Sex: 8h às 19h
           </div>
         </div>
 
@@ -29,34 +29,40 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full gradient-medical flex items-center justify-center text-white font-bold text-xl">
-              Dr
+            <div className="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-xl">
+              AM
             </div>
             <div>
-              <h2 className="text-xl font-bold text-foreground">Dr. André Medina</h2>
-              <p className="text-sm text-muted-foreground">Cirurgião Oncológico</p>
+              <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
+              <p className="text-sm text-muted-foreground">Cirurgia Oncológica - Oncologia Cutânea</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
+          <nav className="hidden lg:flex items-center space-x-8">
+            <a href="#inicio" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Início
             </a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Sobre
             </a>
-            <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-medium">
-              Serviços
+            <a href="#cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              Cirurgias
             </a>
-            <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="#oncologia" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              Oncologia Cutânea
+            </a>
+            <a href="#blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              Blog
+            </a>
+            <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Contato
             </a>
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button className="btn-medical rounded-full px-6">
+          <div className="hidden lg:block">
+            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
               Agendar Consulta
             </Button>
           </div>
@@ -74,19 +80,25 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border/30">
             <nav className="flex flex-col space-y-4">
-              <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#inicio" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Início
               </a>
-              <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Sobre
               </a>
-              <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-medium">
-                Serviços
+              <a href="#cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+                Cirurgias
               </a>
-              <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#oncologia" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+                Oncologia Cutânea
+              </a>
+              <a href="#blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+                Blog
+              </a>
+              <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Contato
               </a>
-              <Button className="btn-medical rounded-full px-6 w-fit">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 w-fit">
                 Agendar Consulta
               </Button>
             </nav>
