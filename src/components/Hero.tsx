@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Shield, Award } from "lucide-react";
-import heroImage from "@/assets/hero-medical-professional.jpg";
+import heroImage from "@/assets/hero-medical.jpg";
 
 const Hero = () => {
   return (
@@ -15,33 +15,33 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary border border-primary/20">
                 <Shield className="h-4 w-4" />
-                Especialista em Oncologia Cutânea
+                Especialista em Cirurgia Oncológica
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                <span className="block text-primary">Dr. André Molina</span>
-                Cirurgião Oncológico
+                Cuidado médico
+                <span className="block text-primary">de excelência</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Especialista em oncologia cutânea com formação no A. C. Camargo Cancer Center. 
-                Tratamento avançado de melanoma, carcinoma basocelular e outros tumores de pele.
+                Mais de 15 anos de experiência oferecendo tratamentos oncológicos 
+                avançados com cuidado humanizado e tecnologia de ponta.
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">CRM-SP</div>
-                <div className="text-sm text-muted-foreground">113993</div>
+                <div className="text-3xl font-bold text-primary">15+</div>
+                <div className="text-sm text-muted-foreground">Anos de experiência</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">RQE</div>
-                <div className="text-sm text-muted-foreground">68140</div>
+                <div className="text-3xl font-bold text-primary">2000+</div>
+                <div className="text-sm text-muted-foreground">Pacientes atendidos</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">Mestrado</div>
-                <div className="text-sm text-muted-foreground">em Oncologia</div>
+                <div className="text-3xl font-bold text-primary">95%</div>
+                <div className="text-sm text-muted-foreground">Taxa de sucesso</div>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ const Hero = () => {
             <div className="card-medical rounded-3xl overflow-hidden">
               <img
                 src={heroImage}
-                alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
+                alt="Dr. André Medina - Cirurgião Oncológico"
                 className="w-full h-[600px] object-cover"
               />
             </div>
@@ -78,10 +78,10 @@ const Hero = () => {
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 card-medical">
                 <h3 className="text-lg font-semibold text-foreground mb-2">
-                  ONCOLOGIA CUTÂNEA
+                  CIRURGIA ONCOLÓGICA
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Especialista em melanoma, carcinoma basocelular e outros tumores de pele
+                  Tratamentos especializados com as mais modernas técnicas cirúrgicas
                 </p>
                 <Button className="btn-medical rounded-full text-sm">
                   Saiba mais
