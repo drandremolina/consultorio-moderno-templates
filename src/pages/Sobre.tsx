@@ -14,6 +14,8 @@ import {
   Calendar,
   Stethoscope
 } from "lucide-react";
+import StructuredData from "@/components/SEO/StructuredData";
+import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
 
 const Sobre = () => {
@@ -34,13 +36,31 @@ const Sobre = () => {
   return (
     <>
       <Helmet>
-        <title>Sobre Dr. André Molina - Cirurgião Oncológico Especialista em Oncologia Cutânea</title>
-        <meta name="description" content="Conheça o Dr. André Molina, cirurgião oncológico especializado em oncologia cutânea. Formação pela UNIOESTE, residência no A.C. Camargo, membro do Grupo Brasileiro de Melanoma." />
-        <meta name="keywords" content="André Molina, cirurgião oncológico, oncologia cutânea, UNIOESTE, A.C. Camargo, Grupo Brasileiro de Melanoma, CRM-SP 113993" />
-        <meta property="og:title" content="Sobre Dr. André Molina - Cirurgião Oncológico" />
-        <meta property="og:description" content="Cirurgião oncológico especializado em oncologia cutânea com vasta experiência em tratamento de melanoma e carcinomas de pele." />
-        <link rel="canonical" href="/sobre" />
+        <title>Dr. André Molina - Sobre | Cirurgião Oncológico Especialista em Oncologia Cutânea</title>
+        <meta name="description" content="Conheça a trajetória do Dr. André Molina, cirurgião oncológico com especialização em oncologia cutânea. Formação acadêmica pela UNIOESTE, residência no A.C. Camargo Cancer Center, membro do Grupo Brasileiro de Melanoma e dedicação ao tratamento personalizado do câncer de pele em São Paulo." />
+        <meta name="keywords" content="Dr André Molina sobre, Andre Molina formação, especialização oncologia cutânea UNIOESTE, A.C. Camargo residência, Grupo Brasileiro Melanoma, cirurgião oncológico São Paulo, curriculum médico, trajetória profissional oncologia, formação acadêmica oncologia cutânea" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Sobre Dr. André Molina - Cirurgião Oncológico Especialista" />
+        <meta property="og:description" content="Trajetória profissional, formação acadêmica pela UNIOESTE e especialização em oncologia cutânea do Dr. André Molina em São Paulo." />
+        <meta property="og:url" content="https://andremedina.com.br/sobre" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Sobre Dr. André Molina" />
+        <meta name="twitter:description" content="Formação e experiência em oncologia cutânea" />
+        
+        {/* Professional Context */}
+        <meta name="professional-background" content="Medicina UNIOESTE, Cirurgia Geral, Oncologia Cutânea A.C. Camargo" />
+        <meta name="medical-education" content="Especialização em Cirurgia Oncológica, Mestrado em Oncologia" />
+        <meta name="professional-memberships" content="Grupo Brasileiro de Melanoma, Sociedade Brasileira de Cirurgia Oncológica" />
+        
+        <link rel="canonical" href="https://andremedina.com.br/sobre" />
       </Helmet>
+      
+      <StructuredData type="person" />
+      <AIOptimization page="about" />
 
       <div className="min-h-screen">
         <Header />

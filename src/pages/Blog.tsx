@@ -7,6 +7,8 @@ import {
   BookOpen,
   Newspaper
 } from "lucide-react";
+import StructuredData from "@/components/SEO/StructuredData";
+import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
 
 const Blog = () => {
@@ -14,12 +16,33 @@ const Blog = () => {
     <>
       <Helmet>
         <title>Blog - Dr. André Molina | Artigos sobre Oncologia Cutânea e Câncer de Pele</title>
-        <meta name="description" content="Artigos especializados sobre melanoma, carcinoma basocelular, prevenção do câncer de pele e tratamentos oncológicos. Blog do Dr. André Molina." />
-        <meta name="keywords" content="blog oncologia cutânea, artigos melanoma, prevenção câncer de pele, carcinoma basocelular, cirurgia de mohs, André Molina" />
+        <meta name="description" content="Artigos especializados sobre melanoma, carcinoma basocelular, prevenção do câncer de pele e tratamentos oncológicos modernos. Blog informativo do Dr. André Molina sobre oncologia cutânea em São Paulo." />
+        <meta name="keywords" content="blog oncologia cutânea São Paulo, artigos melanoma, prevenção câncer de pele, carcinoma basocelular informações, cirurgia de mohs artigos, André Molina blog, dermatologia oncológica, imunoterapia melanoma" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="blog" />
         <meta property="og:title" content="Blog - Dr. André Molina | Oncologia Cutânea" />
-        <meta property="og:description" content="Artigos e informações especializadas sobre câncer de pele e oncologia cutânea." />
-        <link rel="canonical" href="/blog" />
+        <meta property="og:description" content="Artigos e informações especializadas sobre câncer de pele, melanoma e oncologia cutânea." />
+        <meta property="og:url" content="https://andremedina.com.br/blog" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blog - Dr. André Molina" />
+        <meta name="twitter:description" content="Artigos sobre oncologia cutânea e prevenção" />
+        
+        {/* Blog Context */}
+        <meta name="content-type" content="educational-medical-blog" />
+        <meta name="article-topics" content="Melanoma, Carcinoma Basocelular, Prevenção, Tratamentos, Oncologia Cutânea" />
+        
+        <link rel="canonical" href="https://andremedina.com.br/blog" />
       </Helmet>
+      
+      <StructuredData type="article" data={{
+        title: "Blog - Oncologia Cutânea",
+        description: "Artigos educativos sobre câncer de pele e oncologia cutânea",
+        url: "https://andremedina.com.br/blog"
+      }} />
+      <AIOptimization page="blog" />
 
       <div className="min-h-screen">
         <Header />

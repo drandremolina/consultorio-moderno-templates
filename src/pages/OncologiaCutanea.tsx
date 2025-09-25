@@ -13,6 +13,8 @@ import {
   CheckCircle,
   ArrowRight
 } from "lucide-react";
+import StructuredData from "@/components/SEO/StructuredData";
+import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
 
 const OncologiaCutanea = () => {
@@ -80,13 +82,35 @@ const OncologiaCutanea = () => {
   return (
     <>
       <Helmet>
-        <title>Oncologia Cutânea - Dr. André Molina | Melanoma, Carcinoma Basocelular e Tratamentos</title>
-        <meta name="description" content="Informações sobre melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de Merkel e imunoterapia. Dr. André Molina, especialista em oncologia cutânea." />
-        <meta name="keywords" content="melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de Merkel, dermatofibrossarcoma, imunoterapia melanoma, oncologia cutânea, André Molina" />
-        <meta property="og:title" content="Oncologia Cutânea - Dr. André Molina" />
-        <meta property="og:description" content="Informações detalhadas sobre câncer de pele e tratamentos modernos em oncologia cutânea." />
-        <link rel="canonical" href="/oncologia-cutanea" />
+        <title>Oncologia Cutânea - Dr. André Molina | Tratamento de Melanoma e Carcinomas São Paulo</title>
+        <meta name="description" content="Dr. André Molina, especialista em oncologia cutânea em São Paulo. Informações completas sobre melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de células de Merkel, dermatofibrossarcoma e imunoterapia. Tratamento especializado com técnicas avançadas." />
+        <meta name="keywords" content="oncologia cutânea São Paulo, melanoma tratamento SP, carcinoma basocelular São Paulo, carcinoma espinocelular, câncer de pele São Paulo, Dr André Molina oncologia, dermatologia oncológica SP, imunoterapia melanoma, carcinoma células Merkel, dermatofibrossarcoma protuberante" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Oncologia Cutânea - Tratamento Especializado de Câncer de Pele" />
+        <meta property="og:description" content="Informações detalhadas sobre melanoma, carcinomas e imunoterapia com Dr. André Molina, especialista em oncologia cutânea em São Paulo." />
+        <meta property="og:url" content="https://andremedina.com.br/oncologia-cutanea" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Oncologia Cutânea - Dr. André Molina" />
+        <meta name="twitter:description" content="Tratamento especializado em câncer de pele e melanoma" />
+        
+        {/* Medical Conditions */}
+        <meta name="skin-cancer-types" content="Melanoma, Carcinoma Basocelular, Carcinoma Espinocelular, Carcinoma de Células de Merkel, Dermatofibrossarcoma" />
+        <meta name="treatment-modalities" content="Imunoterapia, Cirurgia Oncológica, Terapia Alvo, Radioterapia Adjuvante" />
+        <meta name="medical-information" content="Fatores de risco, patogenia, estadiamento, tratamento" />
+        
+        <link rel="canonical" href="https://andremedina.com.br/oncologia-cutanea" />
       </Helmet>
+      
+      <StructuredData type="article" data={{
+        title: "Oncologia Cutânea - Tratamento de Câncer de Pele",
+        description: "Informações especializadas sobre melanoma, carcinomas e tratamentos em oncologia cutânea",
+        url: "https://andremedina.com.br/oncologia-cutanea"
+      }} />
+      <AIOptimization page="oncology" />
 
       <div className="min-h-screen">
         <Header />

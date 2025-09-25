@@ -10,6 +10,8 @@ import {
   Clock,
   Award
 } from "lucide-react";
+import StructuredData from "@/components/SEO/StructuredData";
+import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
 
 const Cirurgias = () => {
@@ -58,13 +60,34 @@ const Cirurgias = () => {
   return (
     <>
       <Helmet>
-        <title>Cirurgias Oncológicas - Dr. André Molina | Especialista em Oncologia Cutânea</title>
-        <meta name="description" content="Cirurgias oncológicas especializadas: ampliação de margens, cirurgia de Mohs, biópsia de linfonodo sentinela, perfusão isolada de membro. Dr. André Molina, cirurgião oncológico em São Paulo." />
-        <meta name="keywords" content="cirurgia de mohs, ampliação de margens, biópsia linfonodo sentinela, perfusão isolada de membro, cirurgia oncológica, André Molina, melanoma, carcinoma basocelular" />
-        <meta property="og:title" content="Cirurgias Oncológicas - Dr. André Molina" />
-        <meta property="og:description" content="Especialista em cirurgias oncológicas cutâneas com técnicas avançadas e cuidado personalizado." />
-        <link rel="canonical" href="/cirurgias" />
+        <title>Cirurgias Oncológicas - Dr. André Molina | Especialista em Oncologia Cutânea São Paulo</title>
+        <meta name="description" content="Cirurgias oncológicas especializadas realizadas pelo Dr. André Molina em São Paulo: ampliação de margens, cirurgia de Mohs, biópsia de linfonodo sentinela, perfusão isolada de membro. Tratamento de melanoma e carcinomas com técnicas avançadas e precisão cirúrgica." />
+        <meta name="keywords" content="cirurgia de mohs São Paulo, ampliação margens oncológicas, biópsia linfonodo sentinela SP, perfusão isolada membro, cirurgia oncológica São Paulo, Dr André Molina cirurgia, oncologia cutânea procedimentos, ressecção melanoma, microcirurgia dermatológica, excisão carcinoma basocelular" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Cirurgias Oncológicas Especializadas - Dr. André Molina" />
+        <meta property="og:description" content="Procedimentos cirúrgicos especializados em oncologia cutânea com técnicas avançadas: Mohs, linfonodo sentinela, perfusão isolada de membro." />
+        <meta property="og:url" content="https://andremedina.com.br/cirurgias" />
+        
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Cirurgias Oncológicas - Dr. André Molina" />
+        <meta name="twitter:description" content="Procedimentos especializados em oncologia cutânea" />
+        
+        {/* Medical Context */}
+        <meta name="surgical-procedures" content="Ampliação de Margens, Cirurgia de Mohs, Biópsia Linfonodo Sentinela, Perfusão Isolada de Membro" />
+        <meta name="medical-techniques" content="Microcirurgia, Oncoplástica, Ressecção Ampla, Controle Histopatológico" />
+        
+        <link rel="canonical" href="https://andremedina.com.br/cirurgias" />
       </Helmet>
+      
+      <StructuredData type="article" data={{
+        title: "Cirurgias Oncológicas Especializadas",
+        description: "Procedimentos cirúrgicos avançados em oncologia cutânea",
+        url: "https://andremedina.com.br/cirurgias"
+      }} />
+      <AIOptimization page="surgeries" />
 
       <div className="min-h-screen">
         <Header />
