@@ -31,13 +31,15 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer" onClick={() => console.log('Hero WhatsApp link clicked')}>
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg group">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Agendar Consulta
-                  <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </a>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg group"
+                onClick={() => window.location.href = 'https://wa.me/5511971644726'}
+              >
+                <Calendar className="h-5 w-5 mr-2" />
+                Agendar Consulta
+                <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
               
               <a href="/sobre">
                 <Button 

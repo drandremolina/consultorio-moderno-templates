@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
     console.log('WhatsApp button clicked');
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     console.log('Opening URL:', url);
-    window.open(url, '_blank');
+    window.location.href = url;
   };
 
   return (
