@@ -69,7 +69,29 @@ const OncologiaCutanea = () => {
         "Respostas duradouras em muitos pacientes",
         "Menor toxicidade que quimioterapia tradicional",
         "Possibilidade de uso neoadjuvante e adjuvante"
-      ]
+      ],
+      detailedInfo: {
+        description: "A imunoterapia é um tratamento que estimula o sistema imunológico do próprio paciente a combater o câncer. No melanoma, essa abordagem revolucionou o tratamento e melhorou significativamente as chances de cura e sobrevivência.",
+        medications: "Inibidores de PD-1 (Pembrolizumab - Keytruda®, Nivolumab - Opdivo®), Inibidor de CTLA-4 (Ipilimumab - Yervoy®), Inibidor de LAG-3 (Relatlimab), Combinações Fixas (Opdualag® - nivolumab + relatlimab)",
+        indications: [
+          "Antes da Cirurgia (Neoadjuvante): Pode reduzir o tamanho do tumor antes da remoção cirúrgica. Altas taxas de resposta, principalmente em pacientes com melanoma estágio III",
+          "Após a Cirurgia (Adjuvante): Intenção de prevenir o retorno do câncer após a remoção do tumor. Indicado para melanomas estágio metastático",
+          "Doença Avançada (Metastática): Primeira linha de tratamento para melanoma metastático. Pode ser usado em monoterapia ou combinação"
+        ],
+        specificIndications: [
+          "Nivolumab + Ipilimumab é uma combinação eficaz",
+          "Opdualag® (nivolumab + relatlimab) é nova opção para casos não tratados",
+          "Melhora significativa na sobrevida",
+          "Respostas podem ser duradouras"
+        ],
+        benefits: [
+          "Melhora significativa na sobrevida",
+          "Respostas podem ser duradouras",
+          "Qualidade de vida preservada",
+          "Pode levar à remissão completa da doença"
+        ],
+        administration: "Os medicamentos são aplicados por infusão intravenosa, dependendo do protocolo escolhido pelo oncologista."
+      }
     },
     {
       title: "Imunoterapia no Carcinoma Espinocelular",
