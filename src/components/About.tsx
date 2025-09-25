@@ -79,10 +79,7 @@ const About = () => {
               </div>
             </div>
 
-            <Button 
-              onClick={() => window.open('http://lattes.cnpq.br/3560266661123900', '_blank')}
-              className="btn-medical rounded-full px-8 group"
-            >
+            <Button className="btn-medical rounded-full px-8 group">
               Ver currículo completo
               <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>

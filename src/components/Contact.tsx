@@ -42,17 +42,9 @@ const Contact = () => {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Telefones</h3>
-                    <a href="tel:01132583636" className="text-muted-foreground hover:text-primary transition-colors">(11) 3258-3636</a>
-                    <a 
-                      href="https://wa.me/5511971644726?text=Olá! Gostaria de agendar uma consulta com o Dr. André Molina." 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block text-muted-foreground hover:text-green-600 transition-colors"
-                    >
-                      (11) 97164-4726
-                    </a>
-                    <p className="text-sm text-green-600 mt-1">WhatsApp disponível</p>
+                    <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
+                    <p className="text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-sm text-muted-foreground mt-1">WhatsApp disponível</p>
                   </div>
                 </div>
               </CardContent>
@@ -66,7 +58,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
-                    <p className="text-muted-foreground">contato@exactaoncologia.com.br</p>
+                    <p className="text-muted-foreground">contato@andremedina.com.br</p>
+                    <p className="text-sm text-muted-foreground mt-1">Resposta em até 24h</p>
                   </div>
                 </div>
               </CardContent>
@@ -80,9 +73,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
-                    <p className="text-muted-foreground">Rua Adma Jafet, 74, cj 161</p>
+                    <p className="text-muted-foreground">Av. Paulista, 1000</p>
                     <p className="text-muted-foreground">Bela Vista - São Paulo/SP</p>
-                    <p className="text-muted-foreground">CEP: 01308-050</p>
+                    <p className="text-muted-foreground">CEP: 01310-100</p>
                   </div>
                 </div>
               </CardContent>
@@ -97,7 +90,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Horários</h3>
                     <div className="space-y-1 text-sm text-muted-foreground">
-                      <p>Segunda a Sexta: 8h às 19h</p>
+                      <p>Segunda a Sexta: 8h às 18h</p>
+                      <p>Sábados: 8h às 12h</p>
+                      <p>Domingos: Fechado</p>
                     </div>
                   </div>
                 </div>
@@ -105,24 +100,65 @@ const Contact = () => {
             </Card>
           </div>
 
-          {/* WhatsApp CTA */}
+          {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="card-medical rounded-2xl gradient-medical text-white">
-              <CardContent className="p-12 text-center">
-                <MessageCircle className="h-16 w-16 mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4">
-                  Agende sua consulta pelo WhatsApp
-                </h3>
-                <p className="text-xl opacity-90 mb-8">
-                  Entre em contato diretamente pelo WhatsApp para agendamento rápido e prático.
-                </p>
-                <Button 
-                  onClick={() => window.open('https://wa.me/5511971644726?text=Olá! Gostaria de agendar uma consulta com o Dr. André Molina.', '_blank')}
-                  className="bg-white text-primary hover:bg-white/90 rounded-full px-8 py-3 text-lg font-semibold"
-                >
-                  <MessageCircle className="h-5 w-5 mr-2 text-green-600" />
-                  Abrir WhatsApp
+            <Card className="card-medical rounded-2xl">
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground flex items-center gap-2">
+                  <Calendar className="h-6 w-6 text-primary" />
+                  Solicite seu agendamento
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Nome completo</Label>
+                    <Input id="name" placeholder="Seu nome completo" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Telefone</Label>
+                    <Input id="phone" placeholder="(11) 99999-9999" />
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="email">E-mail</Label>
+                    <Input id="email" type="email" placeholder="seu@email.com" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="date">Data preferencial</Label>
+                    <Input id="date" type="date" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="specialty">Especialidade</Label>
+                  <select className="w-full p-3 rounded-lg border border-input bg-background">
+                    <option>Consulta Oncológica Geral</option>
+                    <option>Cirurgia Oncológica</option>
+                    <option>Segunda Opinião</option>
+                    <option>Acompanhamento Pós-operatório</option>
+                  </select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message">Mensagem</Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Descreva brevemente seu caso ou dúvida..."
+                    rows={4}
+                  />
+                </div>
+
+                <Button className="btn-medical rounded-full px-8 w-full text-lg py-6">
+                  <Calendar className="h-5 w-5 mr-2" />
+                  Enviar solicitação
                 </Button>
+
+                <p className="text-sm text-muted-foreground text-center">
+                  Retornaremos seu contato em até 24 horas úteis para confirmar o agendamento.
+                </p>
               </CardContent>
             </Card>
           </div>

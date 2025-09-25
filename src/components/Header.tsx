@@ -28,33 +28,16 @@ const Header = () => {
         </div>
 
         {/* Main header */}
-        <div className="py-4">
-          <div className="flex items-center justify-between mb-4">
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full gradient-medical flex items-center justify-center text-white font-bold text-lg">
-                AM
-              </div>
-              <div>
-                <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
-                <p className="text-sm text-muted-foreground">Cirurgia Oncológica - Oncologia Cutânea</p>
-              </div>
+        <div className="flex items-center justify-between py-4">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full gradient-medical flex items-center justify-center text-white font-bold text-xl">
+              Dr
             </div>
-
-            {/* CTA Button - Desktop */}
-            <div className="hidden md:block">
-              <Button className="btn-medical rounded-full px-6">
-                Agendar Consulta
-              </Button>
+            <div>
+              <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
+              <p className="text-sm text-muted-foreground">Oncologia Cutânea</p>
             </div>
-
-            {/* Mobile menu button */}
-            <button
-              className="md:hidden p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -78,6 +61,21 @@ const Header = () => {
               Contato
             </a>
           </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <Button className="btn-medical rounded-full px-6">
+              Agendar Consulta
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
