@@ -44,8 +44,15 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Telefones</h3>
                     <a href="tel:01132583636" className="text-muted-foreground hover:text-primary transition-colors">(11) 3258-3636</a>
-                    <p className="text-muted-foreground">(11) 97164-4726</p>
-                    <p className="text-sm text-muted-foreground mt-1">WhatsApp disponível</p>
+                    <a 
+                      href="https://wa.me/5511971644726?text=Olá! Gostaria de agendar uma consulta com o Dr. André Molina." 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block text-muted-foreground hover:text-green-600 transition-colors"
+                    >
+                      (11) 97164-4726
+                    </a>
+                    <p className="text-sm text-green-600 mt-1">WhatsApp disponível</p>
                   </div>
                 </div>
               </CardContent>
@@ -110,10 +117,10 @@ const Contact = () => {
                   Entre em contato diretamente pelo WhatsApp para agendamento rápido e prático.
                 </p>
                 <Button 
-                  onClick={() => window.open('https://wa.me/5511971644726', '_blank')}
+                  onClick={() => window.open('https://wa.me/5511971644726?text=Olá! Gostaria de agendar uma consulta com o Dr. André Molina.', '_blank')}
                   className="bg-white text-primary hover:bg-white/90 rounded-full px-8 py-3 text-lg font-semibold"
                 >
-                  <MessageCircle className="h-5 w-5 mr-2" />
+                  <MessageCircle className="h-5 w-5 mr-2 text-green-600" />
                   Abrir WhatsApp
                 </Button>
               </CardContent>
