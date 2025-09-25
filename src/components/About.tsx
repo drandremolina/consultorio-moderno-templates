@@ -15,7 +15,7 @@ const About = () => {
     "Residência em Cirurgia Oncológica - A. C. Camargo Cancer Center", 
     "Mestrado em Oncologia",
     "Membro do Grupo Brasileiro de Melanoma",
-    "Harvard T.H. Chan School of Public Health - PPCR - Principles and Practice of Clinical Research",
+    "Harvard T.H. Chan School of Public Health PPCR - Principles and Practice of Clinical Research",
     "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
