@@ -13,6 +13,7 @@ import {
   ChevronUp
 } from "lucide-react";
 import perfusaoIlustracaoImg from "@/assets/perfusao-isolada-ilustracao.jpg";
+import biopsiaIlustracaoImg from "@/assets/biopsia-linfonodo-ilustracao.jpg";
 import { useState } from "react";
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
@@ -244,6 +245,15 @@ const Cirurgias = () => {
                           <div className="space-y-4">
                             <h3 className="text-2xl font-semibold text-foreground">O que é a Biópsia de Linfonodo Sentinela?</h3>
                             <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.whatIs}</p>
+                          </div>
+
+                          {/* Illustration */}
+                          <div className="flex justify-center my-6">
+                            <img 
+                              src={biopsiaIlustracaoImg} 
+                              alt="Ilustração do procedimento de biópsia de linfonodo sentinela em melanoma" 
+                              className="max-w-full h-auto rounded-lg shadow-lg"
+                            />
                           </div>
 
                           <div className="space-y-4">
