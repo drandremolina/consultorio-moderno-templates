@@ -111,6 +111,10 @@ const Sobre = () => {
                     </p>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
+                      Concluiu o programa PPCR - Principles and Practice of Clinical Research - Harvard T.H. Chan School of Public Health, e atualmente atua como Teaching Assistant do programa.
+                    </p>
+                    
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       É membro do Grupo Brasileiro de Melanoma e da Sociedade Brasileira de Cirurgia Oncológica, participando ativamente de congressos, pesquisas e discussões científicas que atualizam e consolidam sua prática clínica.
                     </p>
                     
