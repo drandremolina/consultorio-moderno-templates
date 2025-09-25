@@ -50,12 +50,6 @@ const About = () => {
               </p>
               
               <p>
-                Formado pela prestigiosa Faculdade de Medicina da USP, realizou fellowships 
-                internacionais em centros de referência nos Estados Unidos e Europa, sempre 
-                em busca das mais modernas técnicas cirúrgicas.
-              </p>
-              
-              <p>
                 Atualmente atende em seu consultório particular e em hospitais renomados de 
                 São Paulo, combinando tecnologia de ponta com um atendimento personalizado 
                 e acolhedor.
