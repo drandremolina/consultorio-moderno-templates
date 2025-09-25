@@ -252,38 +252,38 @@ const OncologiaCutanea = () => {
                   {imunoterapias.map((terapia, index) => (
                     <Card key={index} className="overflow-hidden border-0 shadow-lg">
                       <CardContent className="p-8">
-                        <div className="space-y-6">
-                          <div className="flex items-center justify-between">
+                          <div className="space-y-6">
                             <h3 className="text-xl font-bold text-foreground">
                               {terapia.title}
                             </h3>
+                            
+                            <p className="text-muted-foreground leading-relaxed">
+                              {terapia.description}
+                            </p>
+                            
+                            <div className="space-y-3">
+                              <h4 className="font-semibold text-foreground">Benefícios:</h4>
+                              {terapia.beneficios.map((beneficio, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground text-sm">{beneficio}</span>
+                                </div>
+                              ))}
+                            </div>
+
                             {terapia.detailedInfo && (
-                              <Button
-                                variant="ghost"
-                                size="sm"
+                              <Button 
                                 onClick={() => setExpandedImunotherapy(expandedImunotherapy === index ? null : index)}
-                                className="p-2"
+                                className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 group"
                               >
-                                <Info className="h-4 w-4 mr-1" />
-                                Saiba mais
-                                <ChevronDown className={`h-4 w-4 ml-1 transition-transform ${expandedImunotherapy === index ? 'rotate-180' : ''}`} />
+                                {expandedImunotherapy === index ? 'Ver menos' : 'Saiba mais'}
+                                {expandedImunotherapy === index ? (
+                                  <ChevronDown className="h-4 w-4 ml-2 transition-transform rotate-180" />
+                                ) : (
+                                  <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                                )}
                               </Button>
                             )}
-                          </div>
-                          
-                          <p className="text-muted-foreground leading-relaxed">
-                            {terapia.description}
-                          </p>
-                          
-                          <div className="space-y-3">
-                            <h4 className="font-semibold text-foreground">Benefícios:</h4>
-                            {terapia.beneficios.map((beneficio, idx) => (
-                              <div key={idx} className="flex items-start gap-3">
-                                <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                                <span className="text-muted-foreground text-sm">{beneficio}</span>
-                              </div>
-                            ))}
-                          </div>
 
                           {/* Detailed Information Section */}
                           {terapia.detailedInfo && expandedImunotherapy === index && (
