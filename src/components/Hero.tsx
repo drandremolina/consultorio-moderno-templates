@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Shield, Award } from "lucide-react";
-import heroImage from "@/assets/hero-medical.jpg";
+import heroImage from "@/assets/hero-medical-professional.jpg";
 
 const Hero = () => {
   return (
@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="card-medical rounded-3xl overflow-hidden">
               <img
                 src={heroImage}
-                alt="Dr. André Molina - Cirurgião Oncológico"
+                alt="Dr. André Molina - Consultório de Cirurgia Oncológica"
                 className="w-full h-[600px] object-cover"
               />
             </div>
