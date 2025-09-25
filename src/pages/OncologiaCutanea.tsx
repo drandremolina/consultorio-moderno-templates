@@ -19,7 +19,6 @@ const OncologiaCutanea = () => {
   const condicoes = [
     {
       title: "Melanoma",
-      icon: <AlertTriangle className="h-8 w-8" />,
       incidencia: "Representa 4% dos cânceres de pele, mas é responsável por 80% das mortes",
       fatores: ["Exposição solar excessiva", "Histórico familiar", "Pele clara", "Múltiplas pintas"],
       patogenia: "Origina-se dos melanócitos, células produtoras de melanina. Pode surgir em pele normal ou a partir de nevos pré-existentes.",
@@ -27,7 +26,6 @@ const OncologiaCutanea = () => {
     },
     {
       title: "Carcinoma Basocelular",
-      icon: <Shield className="h-8 w-8" />,
       incidencia: "Tipo mais comum de câncer de pele, representa 70% dos casos",
       fatores: ["Exposição UV crônica", "Idade avançada", "Pele clara", "Imunossupressão"],
       patogenia: "Origina-se das células basais da epiderme. Crescimento lento e baixo potencial metastático.",
@@ -35,7 +33,6 @@ const OncologiaCutanea = () => {
     },
     {
       title: "Carcinoma Espinocelular da Pele",
-      icon: <Microscope className="h-8 w-8" />,
       incidencia: "Segundo tipo mais comum, representa 25% dos cânceres de pele",
       fatores: ["Exposição UV", "Lesões pré-malignas", "Imunossupressão", "Infecção por HPV"],
       patogenia: "Desenvolve-se a partir dos queratinócitos da epiderme. Pode ter comportamento mais agressivo que o carcinoma basocelular.",
@@ -43,7 +40,6 @@ const OncologiaCutanea = () => {
     },
     {
       title: "Carcinoma de Células de Merkel",
-      icon: <Zap className="h-8 w-8" />,
       incidencia: "Tumor raro e agressivo, incidência de 0,7 casos por 100.000 habitantes",
       fatores: ["Idade avançada", "Imunossupressão", "Exposição UV", "Polyomavirus de Merkel"],
       patogenia: "Tumor neuroendócrino da pele com alto potencial metastático. Frequentemente associado ao polyomavirus de Merkel.",
@@ -51,7 +47,6 @@ const OncologiaCutanea = () => {
     },
     {
       title: "Dermatofibrossarcoma Protuberante",
-      icon: <Target className="h-8 w-8" />,
       incidencia: "Sarcoma cutâneo raro, representa menos de 1% dos sarcomas de partes moles",
       fatores: ["Trauma prévio", "Predisposição genética", "Radiação prévia"],
       patogenia: "Sarcoma de baixo grau com alta tendência à recidiva local se incompletamente excisado.",
@@ -138,14 +133,9 @@ const OncologiaCutanea = () => {
                       <CardContent className="p-8">
                         <div className="grid lg:grid-cols-3 gap-8">
                           <div className="space-y-6">
-                            <div className="flex items-center gap-4">
-                              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
-                                {condicao.icon}
-                              </div>
-                              <h3 className="text-2xl font-bold text-foreground">
-                                {condicao.title}
-                              </h3>
-                            </div>
+                            <h3 className="text-2xl font-bold text-foreground">
+                              {condicao.title}
+                            </h3>
                             
                             <div className="space-y-4">
                               <div>
@@ -213,14 +203,9 @@ const OncologiaCutanea = () => {
                     <Card key={index} className="overflow-hidden border-0 shadow-lg">
                       <CardContent className="p-8">
                         <div className="space-y-6">
-                          <div className="flex items-center gap-4">
-                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
-                              <Heart className="h-6 w-6" />
-                            </div>
-                            <h3 className="text-xl font-bold text-foreground">
-                              {terapia.title}
-                            </h3>
-                          </div>
+                          <h3 className="text-xl font-bold text-foreground">
+                            {terapia.title}
+                          </h3>
                           
                           <p className="text-muted-foreground leading-relaxed">
                             {terapia.description}
