@@ -39,8 +39,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
-                    <p className="text-muted-foreground">(11) 3258-3636</p>
-                    <p className="text-sm text-muted-foreground mt-1">(11) 97164-4726 WhatsApp</p>
+                    <a href="tel:01132583636" className="text-muted-foreground hover:text-primary transition-colors">(11) 3258-3636</a>
+                    <br />
+                    <a href="https://wa.me/5511971644726" className="text-sm text-muted-foreground hover:text-primary transition-colors mt-1 inline-block">(11) 97164-4726 WhatsApp</a>
                   </div>
                 </div>
               </CardContent>

@@ -13,11 +13,11 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-cyan-500" />
-              <span>(11) 3258-3636</span>
+              <a href="tel:01132583636" className="hover:text-cyan-500 transition-colors">(11) 3258-3636</a>
             </div>
             <div className="flex items-center gap-2">
               <MessageCircle className="h-4 w-4 text-green-500" />
-              <span>(11) 97164-4726</span>
+              <a href="https://wa.me/5511971644726" className="hover:text-green-500 transition-colors">(11) 97164-4726</a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-cyan-500" />
