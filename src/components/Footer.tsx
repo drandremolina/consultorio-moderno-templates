@@ -56,10 +56,10 @@ const Footer = () => {
               <a href="#sobre" className="block hover:text-primary transition-colors">
                 Sobre o Médico
               </a>
-              <a href="#servicos" className="block hover:text-primary transition-colors">
-                Serviços
+              <a href="/cirurgias" className="block hover:text-primary transition-colors">
+                Cirurgias
               </a>
-              <a href="/contato" className="block hover:text-primary transition-colors">
+              <a href="#contato" className="block hover:text-primary transition-colors">
                 Contato
               </a>
             </nav>
