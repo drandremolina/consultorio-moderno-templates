@@ -78,7 +78,7 @@ const Header = () => {
             <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Blog
             </a>
-            <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Contato
             </a>
           </nav>
@@ -103,7 +103,7 @@ const Header = () => {
               <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
               </a>
-              <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Contato
               </a>
               <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">

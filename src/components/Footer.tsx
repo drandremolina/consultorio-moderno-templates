@@ -71,7 +71,7 @@ const Footer = () => {
               <a href="#servicos" className="block hover:text-primary transition-colors">
                 Serviços
               </a>
-              <a href="#contato" className="block hover:text-primary transition-colors">
+              <a href="/contato" className="block hover:text-primary transition-colors">
                 Contato
               </a>
             </nav>
