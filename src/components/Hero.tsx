@@ -25,7 +25,7 @@ const Hero = () => {
               
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Especialista em Oncologia Cutânea com vasta experiência em tratamento de 
-                melanoma, carcinoma basocelular e cirurgias oncológicas de alta precisão.
+                melanoma, carcinoma basocelular e cirurgias oncológicas.
               </p>
             </div>
 

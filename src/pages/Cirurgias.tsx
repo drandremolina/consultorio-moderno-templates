@@ -32,10 +32,9 @@ const Cirurgias = () => {
     {
       icon: <Scissors className="h-8 w-8" />,
       title: "Cirurgia de Mohs",
-      description: "Técnica cirúrgica de alta precisão para remoção de tumores cutâneos com preservação máxima de tecido saudável.",
+      description: "Técnica cirúrgica para remoção de tumores cutâneos com preservação máxima de tecido saudável.",
       details: [
         "Controle microscópico das margens em tempo real",
-        "Taxa de cura superior a 99%",
         "Preservação de tecido normal",
         "Menor necessidade de reconstrução"
       ]
@@ -90,7 +89,7 @@ const Cirurgias = () => {
                 
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground">
                   Cirurgias Oncológicas
-                  <span className="block text-primary">de Alta Precisão</span>
+                  <span className="block text-primary">Especializadas</span>
                 </h1>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
