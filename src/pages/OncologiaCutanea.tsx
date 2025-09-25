@@ -11,13 +11,17 @@ import {
   Zap,
   Target,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  ChevronDown,
+  Info
 } from "lucide-react";
+import { useState } from "react";
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
 
 const OncologiaCutanea = () => {
+  const [expandedImunotherapy, setExpandedImunotherapy] = useState<number | null>(null);
   const condicoes = [
     {
       title: "Melanoma",
@@ -71,11 +75,33 @@ const OncologiaCutanea = () => {
       title: "Imunoterapia no Carcinoma Espinocelular",
       description: "Cemiplimab e pembrolizumab aprovados para carcinoma espinocelular avançado localmente ou metastático.",
       beneficios: [
-        "Opção para tumores irressecáveis",
+        "Opção para pacientes com tumores localmente avançados e metastáticos",
         "Melhora da qualidade de vida",
         "Controle da doença em casos refratários",
         "Perfil de segurança favorável"
-      ]
+      ],
+      detailedInfo: {
+        description: "A imunoterapia é um tratamento que fortalece o sistema imunológico para reconhecer e destruir células cancerígenas. No carcinoma espinocelular avançado da pele, representa uma opção terapêutica importante quando outros tratamentos não são adequados.",
+        medications: "Inibidores de PD-1 (cemiplimab e pembrolizumab)",
+        indications: [
+          "Antes da Cirurgia (Neoadjuvante): Em tumores grandes que podem se beneficiar da redução de tamanho",
+          "Após a Cirurgia (Adjuvante): Para prevenir recidiva em casos de alto risco",
+          "Doença Avançada: Primeira opção quando cirurgia ou radioterapia não são viáveis"
+        ],
+        specificIndications: [
+          "Carcinomas espinocelulares localmente avançados",
+          "Tumores metastáticos", 
+          "Casos com recidiva após tratamentos convencionais",
+          "Pacientes não candidatos à cirurgia ou radioterapia"
+        ],
+        benefits: [
+          "Controle da doença em casos avançados",
+          "Melhora da qualidade de vida",
+          "Respostas duradouras em alguns pacientes",
+          "Alternativa quando cirurgia não é possível"
+        ],
+        administration: "O cemiplimab e pembrolizumab são administrados por infusão intravenosa, conforme protocolo médico."
+      }
     }
   ];
 
@@ -227,9 +253,23 @@ const OncologiaCutanea = () => {
                     <Card key={index} className="overflow-hidden border-0 shadow-lg">
                       <CardContent className="p-8">
                         <div className="space-y-6">
-                          <h3 className="text-xl font-bold text-foreground">
-                            {terapia.title}
-                          </h3>
+                          <div className="flex items-center justify-between">
+                            <h3 className="text-xl font-bold text-foreground">
+                              {terapia.title}
+                            </h3>
+                            {terapia.detailedInfo && (
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                onClick={() => setExpandedImunotherapy(expandedImunotherapy === index ? null : index)}
+                                className="p-2"
+                              >
+                                <Info className="h-4 w-4 mr-1" />
+                                Saiba mais
+                                <ChevronDown className={`h-4 w-4 ml-1 transition-transform ${expandedImunotherapy === index ? 'rotate-180' : ''}`} />
+                              </Button>
+                            )}
+                          </div>
                           
                           <p className="text-muted-foreground leading-relaxed">
                             {terapia.description}
@@ -244,6 +284,56 @@ const OncologiaCutanea = () => {
                               </div>
                             ))}
                           </div>
+
+                          {/* Detailed Information Section */}
+                          {terapia.detailedInfo && expandedImunotherapy === index && (
+                            <div className="mt-6 pt-6 border-t border-border space-y-6">
+                              <div className="space-y-4">
+                                <h4 className="font-semibold text-foreground">O que é a Imunoterapia?</h4>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                  {terapia.detailedInfo.description}
+                                </p>
+                              </div>
+
+                              <div className="space-y-4">
+                                <h4 className="font-semibold text-foreground">Principais Medicamentos</h4>
+                                <p className="text-muted-foreground text-sm">
+                                  {terapia.detailedInfo.medications}
+                                </p>
+                              </div>
+
+                              <div className="space-y-4">
+                                <h4 className="font-semibold text-foreground">Quando a Imunoterapia é Utilizada</h4>
+                                <div className="space-y-2">
+                                  {terapia.detailedInfo.indications.map((indication, idx) => (
+                                    <div key={idx} className="flex items-start gap-2">
+                                      <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                                      <span className="text-muted-foreground text-sm">{indication}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <div className="space-y-4">
+                                <h4 className="font-semibold text-foreground">Indicações Específicas</h4>
+                                <div className="space-y-2">
+                                  {terapia.detailedInfo.specificIndications.map((indication, idx) => (
+                                    <div key={idx} className="flex items-start gap-2">
+                                      <Target className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                                      <span className="text-muted-foreground text-sm">{indication}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <div className="space-y-4">
+                                <h4 className="font-semibold text-foreground">Administração</h4>
+                                <p className="text-muted-foreground text-sm">
+                                  {terapia.detailedInfo.administration}
+                                </p>
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </CardContent>
                     </Card>
