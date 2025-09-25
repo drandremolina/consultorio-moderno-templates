@@ -37,13 +37,13 @@ const Sobre = () => {
     <>
       <Helmet>
         <title>Dr. André Molina - Sobre | Cirurgião Oncológico Especialista em Oncologia Cutânea</title>
-        <meta name="description" content="Conheça a trajetória do Dr. André Molina, cirurgião oncológico com especialização em oncologia cutânea. Formação acadêmica pela UNIOESTE, residência no A.C. Camargo Cancer Center, membro do Grupo Brasileiro de Melanoma e dedicação ao tratamento personalizado do câncer de pele em São Paulo." />
-        <meta name="keywords" content="Dr André Molina sobre, Andre Molina formação, especialização oncologia cutânea UNIOESTE, A.C. Camargo residência, Grupo Brasileiro Melanoma, cirurgião oncológico São Paulo, curriculum médico, trajetória profissional oncologia, formação acadêmica oncologia cutânea" />
+        <meta name="description" content="Conheça a trajetória do Dr. André Molina, cirurgião oncológico com especialização em oncologia cutânea. Formação acadêmica pela Universidade Estadual do Oeste do Paraná, residência no A.C. Camargo Cancer Center, membro do Grupo Brasileiro de Melanoma e dedicação ao tratamento personalizado do câncer de pele em São Paulo." />
+        <meta name="keywords" content="Dr André Molina sobre, Andre Molina formação, especialização oncologia cutânea, A.C. Camargo residência, Grupo Brasileiro Melanoma, cirurgião oncológico São Paulo, curriculum médico, trajetória profissional oncologia, formação acadêmica oncologia cutânea" />
         
         {/* Open Graph */}
         <meta property="og:type" content="profile" />
         <meta property="og:title" content="Sobre Dr. André Molina - Cirurgião Oncológico Especialista" />
-        <meta property="og:description" content="Trajetória profissional, formação acadêmica pela UNIOESTE e especialização em oncologia cutânea do Dr. André Molina em São Paulo." />
+        <meta property="og:description" content="Trajetória profissional, formação acadêmica pela Universidade Estadual do Oeste do Paraná e especialização em oncologia cutânea do Dr. André Molina em São Paulo." />
         <meta property="og:url" content="https://andremedina.com.br/sobre" />
         
         {/* Twitter Cards */}
@@ -52,7 +52,7 @@ const Sobre = () => {
         <meta name="twitter:description" content="Formação e experiência em oncologia cutânea" />
         
         {/* Professional Context */}
-        <meta name="professional-background" content="Medicina UNIOESTE, Cirurgia Geral, Oncologia Cutânea A.C. Camargo" />
+        <meta name="professional-background" content="Medicina Universidade Estadual do Oeste do Paraná, Cirurgia Geral, Oncologia Cutânea A.C. Camargo" />
         <meta name="medical-education" content="Especialização em Cirurgia Oncológica, Mestrado em Oncologia" />
         <meta name="professional-memberships" content="Grupo Brasileiro de Melanoma, Sociedade Brasileira de Cirurgia Oncológica" />
         

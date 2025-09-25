@@ -11,7 +11,7 @@ import {
 
 const About = () => {
   const achievements = [
-    "Graduação em Medicina - Universidade Estadual do Oeste do Paraná (UNIOESTE)",
+    "Graduação em Medicina - Universidade Estadual do Oeste do Paraná",
     "Residência em Cirurgia Oncológica - A. C. Camargo Cancer Center", 
     "Mestrado em Oncologia",
     "Membro do Grupo Brasileiro de Melanoma",
