@@ -14,6 +14,7 @@ const About = () => {
     "Graduação em Medicina - Universidade Estadual do Oeste do Paraná",
     "Residência em Cirurgia Oncológica - A. C. Camargo Cancer Center", 
     "Mestrado em Oncologia",
+    "PPCR - Principles and Practice of Clinical Research - Harvard T.H. Chan School of Public Health",
     "Membro do Grupo Brasileiro de Melanoma",
     "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
@@ -41,73 +42,45 @@ const About = () => {
           </p>
         </div>
 
-        {/* Main Content - Better distributed */}
-        <div className="grid lg:grid-cols-3 gap-12 items-start">
-          {/* Biography - Takes 2 columns */}
-          <div className="lg:col-span-2 space-y-8">
-            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
-              <p>
-                O Dr. André Molina é reconhecido pela excelência no tratamento de tumores complexos 
-                e pelo cuidado humanizado com seus pacientes.
-              </p>
-              
-              <p>
-                Atualmente atende em seu consultório particular e em hospitais renomados de 
-                São Paulo, combinando tecnologia de ponta com um atendimento personalizado 
-                e acolhedor.
-              </p>
-            </div>
+        {/* Main Content - Centralized */}
+        <div className="max-w-4xl mx-auto space-y-8">
+          <div className="space-y-6 text-muted-foreground leading-relaxed text-lg text-center">
+            <p>
+              O Dr. André Molina é reconhecido pela excelência no tratamento de tumores complexos 
+              e pelo cuidado humanizado com seus pacientes.
+            </p>
+            
+            <p>
+              Atualmente atende em seu consultório particular e em hospitais renomados de 
+              São Paulo, combinando tecnologia de ponta com um atendimento personalizado 
+              e acolhedor.
+            </p>
+          </div>
 
-            {/* Achievements */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground">Especializações</h3>
-              <div className="grid md:grid-cols-2 gap-3">
-                {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{achievement}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-medical rounded-full px-8 group">
-                Ver currículo completo
-                <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
-              </Button>
-
-              <a 
-                href="http://lattes.cnpq.br/3560266661123900" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium border border-primary/20 rounded-full px-8 py-3 hover:bg-primary/5"
-              >
-                <BookOpen className="h-4 w-4" />
-                Currículo Lattes
-                <ArrowRight className="h-4 w-4" />
-              </a>
+          {/* Achievements */}
+          <div className="space-y-6">
+            <h3 className="text-xl font-semibold text-foreground text-center">Especializações</h3>
+            <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              {achievements.map((achievement, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">{achievement}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Specialty Card - Takes 1 column */}
-          <div className="lg:col-span-1">
-            <Card className="card-medical rounded-2xl">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 rounded-2xl gradient-medical flex items-center justify-center text-white mx-auto mb-6">
-                  <Award className="h-8 w-8" />
-                </div>
-                <div className="text-3xl font-bold text-foreground mb-2">
-                  15+ Anos
-                </div>
-                <div className="text-sm text-muted-foreground mb-4">
-                  de Experiência
-                </div>
-                <div className="text-lg font-semibold text-primary">
-                  Oncologia Cutânea
-                </div>
-              </CardContent>
-            </Card>
+          <div className="flex justify-center">
+            <a 
+              href="http://lattes.cnpq.br/3560266661123900" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium border border-primary/20 rounded-full px-8 py-3 hover:bg-primary/5"
+            >
+              <BookOpen className="h-4 w-4" />
+              Currículo Lattes
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
