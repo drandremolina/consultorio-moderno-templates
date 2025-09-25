@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer" onClick={() => console.log('Contact WhatsApp link clicked')}>
                     <Button className="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-6 text-lg">
                       <MessageCircle className="h-5 w-5 mr-2" />
                       WhatsApp
