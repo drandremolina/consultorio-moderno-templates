@@ -11,11 +11,11 @@ import {
 
 const About = () => {
   const achievements = [
-    "Formado pela Faculdade de Medicina da USP",
-    "Residência em Cirurgia Geral no Hospital das Clínicas",
-    "Fellowships em Oncologia nos EUA e Europa",
-    "Mais de 50 publicações científicas",
-    "Membro da Sociedade Brasileira de Oncologia"
+    "Graduação em Medicina - Universidade Estadual do Oeste do Paraná (UNIOESTE)",
+    "Residência em Cirurgia Oncológica - A. C. Camargo Cancer Center", 
+    "Mestrado em Oncologia",
+    "Membro do Grupo Brasileiro de Melanoma",
+    "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
   const stats = [
@@ -38,11 +38,11 @@ const About = () => {
               </div>
               
               <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-                Dr. André Medina
+                Dr. André Molina
               </h2>
               
               <p className="text-xl text-primary font-medium">
-                Cirurgião Oncológico | CRM 123456-SP
+                Cirurgião Oncológico | CRM-SP 113993 RQE 68140
               </p>
             </div>
 

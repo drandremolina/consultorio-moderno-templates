@@ -1,0 +1,279 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { 
+  AlertTriangle, 
+  Shield, 
+  Microscope, 
+  Heart, 
+  Zap,
+  Target,
+  CheckCircle,
+  ArrowRight
+} from "lucide-react";
+import { Helmet } from "react-helmet";
+
+const OncologiaCutanea = () => {
+  const condicoes = [
+    {
+      title: "Melanoma",
+      icon: <AlertTriangle className="h-8 w-8" />,
+      incidencia: "Representa 4% dos cânceres de pele, mas é responsável por 80% das mortes",
+      fatores: ["Exposição solar excessiva", "Histórico familiar", "Pele clara", "Múltiplas pintas"],
+      patogenia: "Origina-se dos melanócitos, células produtoras de melanina. Pode surgir em pele normal ou a partir de nevos pré-existentes.",
+      tratamento: "Excisão cirúrgica com margens adequadas, biópsia de linfonodo sentinela quando indicada, imunoterapia para casos avançados."
+    },
+    {
+      title: "Carcinoma Basocelular",
+      icon: <Shield className="h-8 w-8" />,
+      incidencia: "Tipo mais comum de câncer de pele, representa 70% dos casos",
+      fatores: ["Exposição UV crônica", "Idade avançada", "Pele clara", "Imunossupressão"],
+      patogenia: "Origina-se das células basais da epiderme. Crescimento lento e baixo potencial metastático.",
+      tratamento: "Excisão cirúrgica convencional, cirurgia de Mohs para casos complexos, terapias tópicas em casos selecionados."
+    },
+    {
+      title: "Carcinoma Espinocelular da Pele",
+      icon: <Microscope className="h-8 w-8" />,
+      incidencia: "Segundo tipo mais comum, representa 25% dos cânceres de pele",
+      fatores: ["Exposição UV", "Lesões pré-malignas", "Imunossupressão", "Infecção por HPV"],
+      patogenia: "Desenvolve-se a partir dos queratinócitos da epiderme. Pode ter comportamento mais agressivo que o carcinoma basocelular.",
+      tratamento: "Excisão cirúrgica com margens adequadas, avaliação de linfonodos regionais, radioterapia adjuvante quando necessário."
+    },
+    {
+      title: "Carcinoma de Células de Merkel",
+      icon: <Zap className="h-8 w-8" />,
+      incidencia: "Tumor raro e agressivo, incidência de 0,7 casos por 100.000 habitantes",
+      fatores: ["Idade avançada", "Imunossupressão", "Exposição UV", "Polyomavirus de Merkel"],
+      patogenia: "Tumor neuroendócrino da pele com alto potencial metastático. Frequentemente associado ao polyomavirus de Merkel.",
+      tratamento: "Excisão ampla, biópsia de linfonodo sentinela, radioterapia adjuvante, imunoterapia para doença metastática."
+    },
+    {
+      title: "Dermatofibrossarcoma Protuberante",
+      icon: <Target className="h-8 w-8" />,
+      incidencia: "Sarcoma cutâneo raro, representa menos de 1% dos sarcomas de partes moles",
+      fatores: ["Trauma prévio", "Predisposição genética", "Radiação prévia"],
+      patogenia: "Sarcoma de baixo grau com alta tendência à recidiva local se incompletamente excisado.",
+      tratamento: "Excisão cirúrgica com margens amplas, cirurgia de Mohs em casos selecionados, terapia-alvo para casos avançados."
+    }
+  ];
+
+  const imunoterapias = [
+    {
+      title: "Imunoterapia no Melanoma",
+      description: "Revolucionou o tratamento do melanoma avançado com drogas como pembrolizumab, nivolumab e ipilimumab.",
+      beneficios: [
+        "Melhora significativa da sobrevida global",
+        "Respostas duradouras em muitos pacientes",
+        "Menor toxicidade que quimioterapia tradicional",
+        "Possibilidade de uso neoadjuvante e adjuvante"
+      ]
+    },
+    {
+      title: "Imunoterapia no Carcinoma Espinocelular",
+      description: "Cemiplimab e pembrolizumab aprovados para carcinoma espinocelular avançado localmente ou metastático.",
+      beneficios: [
+        "Opção para tumores irressecáveis",
+        "Melhora da qualidade de vida",
+        "Controle da doença em casos refratários",
+        "Perfil de segurança favorável"
+      ]
+    }
+  ];
+
+  return (
+    <>
+      <Helmet>
+        <title>Oncologia Cutânea - Dr. André Molina | Melanoma, Carcinoma Basocelular e Tratamentos</title>
+        <meta name="description" content="Informações sobre melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de Merkel e imunoterapia. Dr. André Molina, especialista em oncologia cutânea." />
+        <meta name="keywords" content="melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de Merkel, dermatofibrossarcoma, imunoterapia melanoma, oncologia cutânea, André Molina" />
+        <meta property="og:title" content="Oncologia Cutânea - Dr. André Molina" />
+        <meta property="og:description" content="Informações detalhadas sobre câncer de pele e tratamentos modernos em oncologia cutânea." />
+        <link rel="canonical" href="/oncologia-cutanea" />
+      </Helmet>
+
+      <div className="min-h-screen">
+        <Header />
+        
+        <main>
+          {/* Hero Section */}
+          <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center space-y-6">
+                <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary">
+                  <Microscope className="h-4 w-4" />
+                  Oncologia Cutânea
+                </div>
+                
+                <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+                  Câncer de Pele
+                  <span className="block text-primary">Informações Essenciais</span>
+                </h1>
+                
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                  Conheça os principais tipos de câncer de pele, fatores de risco, 
+                  tratamentos disponíveis e as mais modernas terapias oncológicas.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Condições Section */}
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <div className="space-y-16">
+                <div className="text-center space-y-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                    Principais Tipos de Câncer de Pele
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Entenda as características, fatores de risco e tratamentos para cada tipo de tumor cutâneo.
+                  </p>
+                </div>
+
+                <div className="space-y-12">
+                  {condicoes.map((condicao, index) => (
+                    <Card key={index} className="overflow-hidden border-0 shadow-lg">
+                      <CardContent className="p-8">
+                        <div className="grid lg:grid-cols-3 gap-8">
+                          <div className="space-y-6">
+                            <div className="flex items-center gap-4">
+                              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
+                                {condicao.icon}
+                              </div>
+                              <h3 className="text-2xl font-bold text-foreground">
+                                {condicao.title}
+                              </h3>
+                            </div>
+                            
+                            <div className="space-y-4">
+                              <div>
+                                <h4 className="font-semibold text-foreground mb-2">Incidência</h4>
+                                <p className="text-muted-foreground text-sm leading-relaxed">
+                                  {condicao.incidencia}
+                                </p>
+                              </div>
+                              
+                              <div>
+                                <h4 className="font-semibold text-foreground mb-2">Fatores de Risco</h4>
+                                <div className="space-y-2">
+                                  {condicao.fatores.map((fator, idx) => (
+                                    <div key={idx} className="flex items-start gap-2">
+                                      <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                                      <span className="text-muted-foreground text-sm">{fator}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <div>
+                              <h4 className="font-semibold text-foreground mb-2">Patogenia</h4>
+                              <p className="text-muted-foreground text-sm leading-relaxed">
+                                {condicao.patogenia}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <div>
+                              <h4 className="font-semibold text-foreground mb-2">Tratamento</h4>
+                              <p className="text-muted-foreground text-sm leading-relaxed">
+                                {condicao.tratamento}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Imunoterapia Section */}
+          <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <div className="container mx-auto px-4">
+              <div className="space-y-12">
+                <div className="text-center space-y-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                    Imunoterapia Oncológica
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Tratamentos inovadores que revolucionaram a oncologia cutânea.
+                  </p>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {imunoterapias.map((terapia, index) => (
+                    <Card key={index} className="overflow-hidden border-0 shadow-lg">
+                      <CardContent className="p-8">
+                        <div className="space-y-6">
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
+                              <Heart className="h-6 w-6" />
+                            </div>
+                            <h3 className="text-xl font-bold text-foreground">
+                              {terapia.title}
+                            </h3>
+                          </div>
+                          
+                          <p className="text-muted-foreground leading-relaxed">
+                            {terapia.description}
+                          </p>
+                          
+                          <div className="space-y-3">
+                            <h4 className="font-semibold text-foreground">Benefícios:</h4>
+                            {terapia.beneficios.map((beneficio, idx) => (
+                              <div key={idx} className="flex items-start gap-3">
+                                <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                                <span className="text-muted-foreground text-sm">{beneficio}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-white">
+            <div className="container mx-auto px-4 text-center space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  Tem Suspeita de Câncer de Pele?
+                </h2>
+                <p className="text-xl opacity-90 max-w-2xl mx-auto">
+                  O diagnóstico precoce é fundamental. Agende uma consulta especializada 
+                  para avaliação e orientações personalizadas.
+                </p>
+              </div>
+
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-gray-50 rounded-full px-8 py-6 text-lg group"
+              >
+                <Target className="h-5 w-5 mr-2" />
+                Agendar Avaliação
+                <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </div>
+          </section>
+        </main>
+
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </>
+  );
+};
+
+export default OncologiaCutanea;

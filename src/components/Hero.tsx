@@ -19,13 +19,13 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                Cuidado médico
-                <span className="block text-primary">de excelência</span>
+                Dr. André Molina
+                <span className="block text-primary">Cirurgião Oncológico</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Mais de 15 anos de experiência oferecendo tratamentos oncológicos 
-                avançados com cuidado humanizado e tecnologia de ponta.
+                Especialista em Oncologia Cutânea com vasta experiência em tratamento de 
+                melanoma, carcinoma basocelular e cirurgias oncológicas de alta precisão.
               </p>
             </div>
 
@@ -47,20 +47,24 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="btn-medical rounded-full px-8 py-6 text-lg group">
-                <Calendar className="h-5 w-5 mr-2" />
-                Agendar Consulta
-                <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg group">
+                  <Calendar className="h-5 w-5 mr-2" />
+                  Agendar Consulta
+                  <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </a>
               
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="rounded-full px-8 py-6 text-lg border-primary/20 hover:bg-primary/5 hover:border-primary/40"
-              >
-                <Award className="h-5 w-5 mr-2" />
-                Conheça minha trajetória
-              </Button>
+              <a href="/sobre">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="rounded-full px-8 py-6 text-lg border-primary/20 hover:bg-primary/5 hover:border-primary/40"
+                >
+                  <Award className="h-5 w-5 mr-2" />
+                  Conheça minha trajetória
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -69,7 +73,7 @@ const Hero = () => {
             <div className="card-medical rounded-3xl overflow-hidden">
               <img
                 src={heroImage}
-                alt="Dr. André Medina - Cirurgião Oncológico"
+                alt="Dr. André Molina - Cirurgião Oncológico"
                 className="w-full h-[600px] object-cover"
               />
             </div>
@@ -78,14 +82,16 @@ const Hero = () => {
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 card-medical">
                 <h3 className="text-lg font-semibold text-foreground mb-2">
-                  CIRURGIA ONCOLÓGICA
+                  ONCOLOGIA CUTÂNEA
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Tratamentos especializados com as mais modernas técnicas cirúrgicas
+                  Tratamentos especializados em melanoma e carcinomas de pele
                 </p>
-                <Button className="btn-medical rounded-full text-sm">
-                  Saiba mais
-                </Button>
+                <a href="/cirurgias">
+                  <Button className="bg-primary hover:bg-primary/90 text-white rounded-full text-sm">
+                    Saiba mais
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

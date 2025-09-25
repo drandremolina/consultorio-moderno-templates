@@ -21,8 +21,8 @@ const Footer = () => {
                 Dr
               </div>
               <div>
-                <h3 className="text-xl font-bold">Dr. André Medina</h3>
-                <p className="text-white/70">Cirurgião Oncológico</p>
+                <h3 className="text-xl font-bold">Dr. André Molina</h3>
+                <p className="text-white/70">Cirurgião Oncológico - Oncologia Cutânea</p>
               </div>
             </div>
             
@@ -84,23 +84,28 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>(11) 99999-9999</p>
-                  <p className="text-sm text-white/60">WhatsApp disponível</p>
+                  <a href="tel:01132583636" className="hover:text-primary transition-colors">(11) 3258-3636</a>
+                  <p className="text-sm text-white/60">(11) 97164-4726 WhatsApp</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>contato@andremedina.com.br</p>
+                <p>contato@exactaoncologia.com.br</p>
               </div>
               
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Av. Paulista, 1000</p>
-                  <p>Bela Vista - São Paulo/SP</p>
+                  <p>Rua Adma Jafet, 74, cj 161</p>
+                  <p>Bela Vista, São Paulo - SP CEP 01308-050</p>
                 </div>
               </div>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-white/10 text-sm text-white/60">
+              <p>Responsável Técnico: André Molina</p>
+              <p>CRM-SP 113993 RQE 68140</p>
             </div>
           </div>
         </div>

@@ -40,19 +40,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Início
             </a>
-            <a href="#sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Sobre
             </a>
-            <a href="#cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Cirurgias
             </a>
-            <a href="#oncologia" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/oncologia-cutanea" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Oncologia Cutânea
             </a>
-            <a href="#blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Blog
             </a>
             <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
@@ -62,9 +62,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
-              Agendar Consulta
-            </Button>
+            <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
+                Agendar Consulta
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -80,27 +82,29 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border/30">
             <nav className="flex flex-col space-y-4">
-              <a href="#inicio" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Início
               </a>
-              <a href="#sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Sobre
               </a>
-              <a href="#cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Cirurgias
               </a>
-              <a href="#oncologia" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/oncologia-cutanea" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Oncologia Cutânea
               </a>
-              <a href="#blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
               </a>
               <a href="#contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Contato
               </a>
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 w-fit">
-                Agendar Consulta
-              </Button>
+              <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 w-fit">
+                  Agendar Consulta
+                </Button>
+              </a>
             </nav>
           </div>
         )}
