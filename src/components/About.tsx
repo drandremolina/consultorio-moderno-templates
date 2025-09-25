@@ -11,18 +11,18 @@ import {
 
 const About = () => {
   const achievements = [
-    "Formado pela Faculdade de Medicina da USP",
-    "Residência em Cirurgia Geral no Hospital das Clínicas",
-    "Fellowships em Oncologia nos EUA e Europa",
-    "Mais de 50 publicações científicas",
-    "Membro da Sociedade Brasileira de Oncologia"
+    "Graduado pela Universidade Estadual do Oeste do Paraná",
+    "Residência em Cirurgia Oncológica no A. C. Camargo Cancer Center",
+    "Mestrado em Oncologia",
+    "Membro do Grupo Brasileiro de Melanoma",
+    "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
   const stats = [
-    { icon: <GraduationCap className="h-6 w-6" />, label: "Formação", value: "USP" },
-    { icon: <Award className="h-6 w-6" />, label: "Experiência", value: "15+ anos" },
-    { icon: <Users className="h-6 w-6" />, label: "Pacientes", value: "2000+" },
-    { icon: <BookOpen className="h-6 w-6" />, label: "Publicações", value: "50+" }
+    { icon: <GraduationCap className="h-6 w-6" />, label: "Formação", value: "UNIOESTE" },
+    { icon: <Award className="h-6 w-6" />, label: "Residência", value: "A.C.Camargo" },
+    { icon: <Users className="h-6 w-6" />, label: "Especialização", value: "Oncologia Cutânea" },
+    { icon: <BookOpen className="h-6 w-6" />, label: "Titulação", value: "Mestrado" }
   ];
 
   return (
@@ -38,31 +38,31 @@ const About = () => {
               </div>
               
               <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-                Dr. André Medina
+                Dr. André Molina
               </h2>
               
               <p className="text-xl text-primary font-medium">
-                Cirurgião Oncológico | CRM 123456-SP
+                Cirurgião Oncológico | CRM-SP 113993 RQE 68140
               </p>
             </div>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Com mais de 15 anos de experiência em cirurgia oncológica, o Dr. André Medina 
-                é reconhecido pela excelência no tratamento de tumores complexos e pelo cuidado 
-                humanizado com seus pacientes.
+                Especialista em oncologia cutânea com sólida formação acadêmica e ampla 
+                experiência no tratamento de melanoma, carcinoma basocelular e outros tumores de pele. 
+                Graduado pela Universidade Estadual do Oeste do Paraná.
               </p>
               
               <p>
-                Formado pela prestigiosa Faculdade de Medicina da USP, realizou fellowships 
-                internacionais em centros de referência nos Estados Unidos e Europa, sempre 
-                em busca das mais modernas técnicas cirúrgicas.
+                Realizou residência em cirurgia oncológica no renomado A. C. Camargo Cancer Center, 
+                um dos principais centros de referência em oncologia do Brasil. Possui Mestrado em 
+                Oncologia e é membro ativo do Grupo Brasileiro de Melanoma.
               </p>
               
               <p>
-                Atualmente atende em seu consultório particular e em hospitais renomados de 
-                São Paulo, combinando tecnologia de ponta com um atendimento personalizado 
-                e acolhedor.
+                Como membro da Sociedade Brasileira de Cirurgia Oncológica, mantém-se constantemente 
+                atualizado com as mais modernas técnicas cirúrgicas e tratamentos inovadores, 
+                oferecendo cuidado personalizado e humanizado a cada paciente.
               </p>
             </div>
 
@@ -110,11 +110,11 @@ const About = () => {
               <CardContent className="p-8 text-center">
                 <Award className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-2">
-                  Certificação Internacional
+                  Especialista em Oncologia Cutânea
                 </h3>
                 <p className="opacity-90">
-                  Reconhecido pela International Society of Surgical Oncology 
-                  como especialista em cirurgias oncológicas complexas.
+                  Membro do Grupo Brasileiro de Melanoma e da Sociedade Brasileira 
+                  de Cirurgia Oncológica, com expertise em tratamentos avançados.
                 </p>
               </CardContent>
             </Card>

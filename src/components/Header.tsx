@@ -13,15 +13,17 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-primary" />
-              <span>(11) 99999-9999</span>
+              <a href="tel:01132583636" className="hover:text-primary transition-colors">
+                (11) 3258-3636
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Av. Paulista, 1000 - São Paulo</span>
+              <span>Rua Adma Jafet, 74, cj 161 - Bela Vista</span>
             </div>
           </div>
           <div className="text-primary font-medium">
-            Seg - Sex: 8h às 18h | Sáb: 8h às 12h
+            Seg - Sex: 8h às 19h
           </div>
         </div>
 
@@ -33,8 +35,8 @@ const Header = () => {
               Dr
             </div>
             <div>
-              <h2 className="text-xl font-bold text-foreground">Dr. André Medina</h2>
-              <p className="text-sm text-muted-foreground">Cirurgião Oncológico</p>
+              <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
+              <p className="text-sm text-muted-foreground">Oncologia Cutânea</p>
             </div>
           </div>
 
@@ -46,8 +48,14 @@ const Header = () => {
             <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
               Sobre
             </a>
-            <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-medium">
-              Serviços
+            <a href="/cirurgias" className="text-foreground hover:text-primary transition-colors font-medium">
+              Cirurgias
+            </a>
+            <a href="/oncologia-cutanea" className="text-foreground hover:text-primary transition-colors font-medium">
+              Oncologia Cutânea
+            </a>
+            <a href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
+              Blog
             </a>
             <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
               Contato
@@ -80,8 +88,14 @@ const Header = () => {
               <a href="#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
                 Sobre
               </a>
-              <a href="#servicos" className="text-foreground hover:text-primary transition-colors font-medium">
-                Serviços
+              <a href="/cirurgias" className="text-foreground hover:text-primary transition-colors font-medium">
+                Cirurgias
+              </a>
+              <a href="/oncologia-cutanea" className="text-foreground hover:text-primary transition-colors font-medium">
+                Oncologia Cutânea
+              </a>
+              <a href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">
+                Blog
               </a>
               <a href="#contato" className="text-foreground hover:text-primary transition-colors font-medium">
                 Contato

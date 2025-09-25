@@ -14,39 +14,39 @@ const Services = () => {
   const services = [
     {
       icon: <Stethoscope className="h-8 w-8" />,
-      title: "Cirurgia Oncológica",
-      description: "Procedimentos cirúrgicos especializados para tratamento de diversos tipos de câncer com técnicas minimamente invasivas.",
-      features: ["Laparoscopia", "Cirurgia robótica", "Procedimentos mini-invasivos"]
+      title: "Cirurgia de Mohs",
+      description: "Técnica cirúrgica de alta precisão para remoção de tumores cutâneos com controle microscópico das margens.",
+      features: ["Controle microscópico", "Preservação de tecido", "Alta taxa de cura"]
     },
     {
       icon: <Heart className="h-8 w-8" />,
-      title: "Oncologia Clínica",
-      description: "Tratamento clínico completo incluindo quimioterapia, imunoterapia e terapias alvo personalizadas.",
-      features: ["Quimioterapia", "Imunoterapia", "Medicina personalizada"]
+      title: "Tratamento de Melanoma",
+      description: "Abordagem multidisciplinar para melanoma incluindo cirurgia, biópsia de linfonodo sentinela e imunoterapia.",
+      features: ["Estadiamento completo", "Cirurgia especializada", "Imunoterapia avançada"]
     },
     {
       icon: <Brain className="h-8 w-8" />,
-      title: "Diagnóstico Precoce",
-      description: "Programas de rastreamento e diagnóstico precoce para identificação de tumores em estágios iniciais.",
-      features: ["Check-ups preventivos", "Exames de imagem", "Biópsias especializadas"]
+      title: "Carcinoma Basocelular",
+      description: "Tratamento especializado para carcinomas basocelulares com técnicas que garantem máxima eficácia.",
+      features: ["Excisão completa", "Reconstrução estética", "Seguimento oncológico"]
     },
     {
       icon: <Activity className="h-8 w-8" />,
-      title: "Acompanhamento",
-      description: "Seguimento pós-operatório e acompanhamento oncológico contínuo para garantir a recuperação completa.",
-      features: ["Follow-up especializado", "Reabilitação", "Cuidados paliativos"]
+      title: "Perfusão Isolada de Membro",
+      description: "Técnica avançada para tratamento de melanomas e sarcomas de extremidades em estágios avançados.",
+      features: ["Técnica especializada", "Preservação do membro", "Resultados superiores"]
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Prevenção",
-      description: "Orientação e programas de prevenção para reduzir os riscos de desenvolvimento de câncer.",
-      features: ["Orientação nutricional", "Estilo de vida", "Genética oncológica"]
+      title: "Biópsia de Linfonodo Sentinela",
+      description: "Procedimento minimamente invasivo para estadiamento preciso de melanomas.",
+      features: ["Mapeamento linfático", "Técnica minimamente invasiva", "Estadiamento preciso"]
     },
     {
       icon: <Microscope className="h-8 w-8" />,
-      title: "Segunda Opinião",
-      description: "Análise detalhada de casos complexos oferecendo uma segunda opinião médica especializada.",
-      features: ["Revisão de casos", "Planos alternativos", "Consultoria especializada"]
+      title: "Ampliação de Margens",
+      description: "Procedimento cirúrgico para garantir remoção completa de tumores com margens de segurança.",
+      features: ["Controle oncológico", "Análise histopatológica", "Reconstrução imediata"]
     }
   ];
 
@@ -56,16 +56,16 @@ const Services = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary mb-4">
             <Activity className="h-4 w-4" />
-            Nossos Serviços
+            Cirurgias Especializadas
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Tratamentos especializados
+            Procedimentos em Oncologia Cutânea
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos uma ampla gama de serviços oncológicos com foco na excelência médica 
-            e no cuidado humanizado de cada paciente.
+            Oferecemos cirurgias especializadas para tratamento de melanoma, carcinoma basocelular 
+            e outros tumores de pele com técnicas avançadas e cuidado personalizado.
           </p>
         </div>
 
