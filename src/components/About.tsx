@@ -101,19 +101,6 @@ const About = () => {
               ))}
             </div>
 
-            {/* Main achievement card */}
-            <Card className="card-medical rounded-2xl gradient-medical text-white">
-              <CardContent className="p-8 text-center">
-                <Award className="h-12 w-12 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">
-                  Certificação Internacional
-                </h3>
-                <p className="opacity-90">
-                  Reconhecido pela International Society of Surgical Oncology 
-                  como especialista em cirurgias oncológicas complexas.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

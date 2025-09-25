@@ -25,21 +25,10 @@ const Sobre = () => {
     "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
-  const especializacoes = [
-    "Cirurgia Oncológica Cutânea",
-    "Cirurgia de Mohs",
-    "Biópsia de Linfonodo Sentinela",
-    "Perfusão Isolada de Membro",
-    "Ampliação de Margens Cirúrgicas",
-    "Tratamento de Melanoma",
-    "Tratamento de Carcinomas Cutâneos"
-  ];
 
   const membros = [
     "Grupo Brasileiro de Melanoma",
-    "Sociedade Brasileira de Cirurgia Oncológica",
-    "Sociedade Brasileira de Dermatologia (Associate)",
-    "International Society of Surgical Oncology"
+    "Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
   return (
@@ -151,7 +140,7 @@ const Sobre = () => {
                   </p>
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-2 gap-8">
                   <Card className="border-0 shadow-lg">
                     <CardContent className="p-8">
                       <div className="space-y-6">
@@ -177,30 +166,6 @@ const Sobre = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="border-0 shadow-lg">
-                    <CardContent className="p-8">
-                      <div className="space-y-6">
-                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
-                          <Award className="h-8 w-8" />
-                        </div>
-                        
-                        <div className="space-y-4">
-                          <h3 className="text-xl font-bold text-foreground">
-                            Especializações
-                          </h3>
-                          
-                          <div className="space-y-3">
-                            {especializacoes.map((item, index) => (
-                              <div key={index} className="flex items-start gap-3">
-                                <CheckCircle className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                                <span className="text-muted-foreground text-sm leading-relaxed">{item}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
 
                   <Card className="border-0 shadow-lg">
                     <CardContent className="p-8">
