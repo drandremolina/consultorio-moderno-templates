@@ -79,19 +79,23 @@ const Sobre = () => {
                 <div className="space-y-8">
                   <div className="space-y-4">
                     <h2 className="text-3xl font-bold text-foreground">
-                      Perfil Profissional
+                      Sobre o Dr. André Molina
                     </h2>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                       O Dr. André Molina é cirurgião oncológico especializado em oncologia cutânea, 
-                       com vasta experiência clínica no tratamento de tumores de pele, especialmente 
-                       melanoma e carcinomas cutâneos.
-                     </p>
+                      O Dr. André Molina é médico formado pela Universidade Estadual do Oeste do Paraná e realizou residência em Cirurgia Oncológica no A.C. Camargo Cancer Center, instituição de referência no tratamento do câncer na América Latina.
+                    </p>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Sua trajetória profissional é marcada pela dedicação ao aprimoramento 
-                      contínuo e pela busca das mais modernas técnicas cirúrgicas, sempre 
-                      priorizando o cuidado humanizado e personalizado para cada paciente.
+                      Concluiu o Mestrado em Oncologia, dedicando-se ao aperfeiçoamento das práticas cirúrgicas e ao cuidado integral do paciente oncológico.
+                    </p>
+                    
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      É membro do Grupo Brasileiro de Melanoma e da Sociedade Brasileira de Cirurgia Oncológica, participando ativamente de congressos, pesquisas e discussões científicas que atualizam e consolidam sua prática clínica.
+                    </p>
+                    
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Seu trabalho é pautado pelo rigor técnico, atualização constante e compromisso em oferecer um atendimento de excelência aos pacientes.
                     </p>
                   </div>
 
