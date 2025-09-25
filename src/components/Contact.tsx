@@ -56,7 +56,6 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
                     <p className="text-muted-foreground">contato@exactaoncologia.com.br</p>
-                    <p className="text-sm text-muted-foreground mt-1">Resposta em até 24h</p>
                   </div>
                 </div>
               </CardContent>
