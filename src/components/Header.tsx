@@ -28,20 +28,37 @@ const Header = () => {
         </div>
 
         {/* Main header */}
-        <div className="flex items-center justify-between py-4">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full gradient-medical flex items-center justify-center text-white font-bold text-lg">
-              AM
+        <div className="py-4">
+          <div className="flex items-center justify-between mb-4">
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full gradient-medical flex items-center justify-center text-white font-bold text-lg">
+                AM
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
+                <p className="text-sm text-muted-foreground">Oncologia Cutânea</p>
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
-              <p className="text-sm text-muted-foreground">Oncologia Cutânea</p>
+
+            {/* CTA Button - Desktop */}
+            <div className="hidden md:block">
+              <Button className="btn-medical rounded-full px-6">
+                Agendar Consulta
+              </Button>
             </div>
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 flex-1 justify-start ml-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
               Início
             </a>
@@ -61,26 +78,11 @@ const Header = () => {
               Contato
             </a>
           </nav>
-
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button className="btn-medical rounded-full px-6">
-              Agendar Consulta
-            </Button>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border/30">
+          <div className="md:hidden py-4 border-t border-border/30">
             <nav className="flex flex-col space-y-4">
               <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
                 Início
