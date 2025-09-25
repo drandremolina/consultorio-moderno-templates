@@ -14,8 +14,8 @@ const About = () => {
     "Graduação em Medicina - Universidade Estadual do Oeste do Paraná",
     "Residência em Cirurgia Oncológica - A. C. Camargo Cancer Center", 
     "Mestrado em Oncologia",
-    "PPCR - Principles and Practice of Clinical Research - Harvard T.H. Chan School of Public Health",
     "Membro do Grupo Brasileiro de Melanoma",
+    "PPCR - Principles and Practice of Clinical Research - Harvard T.H. Chan School of Public Health",
     "Membro da Sociedade Brasileira de Cirurgia Oncológica"
   ];
 
