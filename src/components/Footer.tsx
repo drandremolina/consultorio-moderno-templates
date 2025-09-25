@@ -21,15 +21,14 @@ const Footer = () => {
                 Dr
               </div>
               <div>
-                <h3 className="text-xl font-bold">Dr. André Medina</h3>
-                <p className="text-white/70">Cirurgião Oncológico</p>
+                <h3 className="text-xl font-bold">Dr. André Molina</h3>
+                <p className="text-white/70">Oncologia Cutânea</p>
               </div>
             </div>
             
             <p className="text-white/80 leading-relaxed max-w-md">
-              Dedicado ao tratamento oncológico de excelência, combinando experiência, 
-              tecnologia avançada e cuidado humanizado para oferecer a melhor assistência 
-              aos pacientes.
+              Especialista em oncologia cutânea com sólida formação acadêmica e ampla experiência 
+              no tratamento de melanoma, carcinoma basocelular e outros tumores de pele.
             </p>
 
             {/* Social media */}
@@ -68,8 +67,14 @@ const Footer = () => {
               <a href="#sobre" className="block hover:text-primary transition-colors">
                 Sobre o Médico
               </a>
-              <a href="#servicos" className="block hover:text-primary transition-colors">
-                Serviços
+              <a href="/cirurgias" className="block hover:text-primary transition-colors">
+                Cirurgias
+              </a>
+              <a href="/oncologia-cutanea" className="block hover:text-primary transition-colors">
+                Oncologia Cutânea
+              </a>
+              <a href="/blog" className="block hover:text-primary transition-colors">
+                Blog
               </a>
               <a href="#contato" className="block hover:text-primary transition-colors">
                 Contato
@@ -84,21 +89,23 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>(11) 99999-9999</p>
+                  <a href="tel:01132583636" className="hover:text-primary transition-colors">(11) 3258-3636</a>
+                  <p>(11) 97164-4726</p>
                   <p className="text-sm text-white/60">WhatsApp disponível</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>contato@andremedina.com.br</p>
+                <p>contato@exactaoncologia.com.br</p>
               </div>
               
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Av. Paulista, 1000</p>
+                  <p>Rua Adma Jafet, 74, cj 161</p>
                   <p>Bela Vista - São Paulo/SP</p>
+                  <p>CEP: 01308-050</p>
                 </div>
               </div>
             </div>
@@ -108,8 +115,9 @@ const Footer = () => {
         {/* Bottom footer */}
         <div className="py-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
-            <div className="flex items-center gap-2">
-              <span>© 2024 Dr. André Medina. Todos os direitos reservados.</span>
+            <div className="flex flex-col md:flex-row items-center gap-2">
+              <span>© 2024 Dr. André Molina. Todos os direitos reservados.</span>
+              <span className="text-xs">Responsável Técnico: André Molina CRM-SP 113993 RQE 68140</span>
             </div>
             
             <div className="flex items-center gap-1">
