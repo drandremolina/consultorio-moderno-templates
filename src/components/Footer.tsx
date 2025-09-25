@@ -2,9 +2,7 @@ import {
   Phone, 
   Mail, 
   MapPin, 
-  Facebook, 
   Instagram, 
-  Linkedin,
   Heart 
 } from "lucide-react";
 
@@ -37,24 +35,12 @@ const Footer = () => {
               <span className="text-sm text-white/70">Siga-nos:</span>
               <div className="flex items-center gap-3">
                 <a 
-                  href="#" 
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary transition-colors flex items-center justify-center"
-                >
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a 
                   href="https://www.instagram.com/dr.andremolina?igsh=ZDZ2bTFocGlsbjcy&utm_source=qr" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary transition-colors flex items-center justify-center"
                 >
                   <Instagram className="h-5 w-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary transition-colors flex items-center justify-center"
-                >
-                  <Linkedin className="h-5 w-5" />
                 </a>
               </div>
             </div>
