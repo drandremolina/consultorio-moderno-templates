@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, MapPin } from "lucide-react";
+import { Menu, X, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -14,6 +14,10 @@ const Header = () => {
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-cyan-500" />
               <span>(11) 3258-3636</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MessageCircle className="h-4 w-4 text-green-500" />
+              <span>(11) 97164-4726</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-cyan-500" />
