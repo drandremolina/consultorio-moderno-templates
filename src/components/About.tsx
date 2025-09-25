@@ -25,25 +25,27 @@ const About = () => {
   return (
     <section id="sobre" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary">
-                <Award className="h-4 w-4" />
-                Sobre o Médico
-              </div>
-              
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-                Dr. André Molina
-              </h2>
-              
-              <p className="text-xl text-primary font-medium">
-                Cirurgião Oncológico | CRM-SP 113993 RQE 68140
-              </p>
-            </div>
+        {/* Header Section - Centralized */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary mb-4">
+            <Award className="h-4 w-4" />
+            Sobre o Médico
+          </div>
+          
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            Dr. André Molina
+          </h2>
+          
+          <p className="text-xl text-primary font-medium">
+            Cirurgião Oncológico | CRM-SP 113993 RQE 68140
+          </p>
+        </div>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+        {/* Main Content - Better distributed */}
+        <div className="grid lg:grid-cols-3 gap-12 items-start">
+          {/* Biography - Takes 2 columns */}
+          <div className="lg:col-span-2 space-y-8">
+            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
                 O Dr. André Molina é reconhecido pela excelência no tratamento de tumores complexos 
                 e pelo cuidado humanizado com seus pacientes.
@@ -56,24 +58,10 @@ const About = () => {
               </p>
             </div>
 
-            {/* Lattes CV Link */}
-            <div className="pt-4">
-              <a 
-                href="http://lattes.cnpq.br/3560266661123900" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
-              >
-                <BookOpen className="h-4 w-4" />
-                Currículo Lattes
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
-
             {/* Achievements */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-foreground">Especializações</h3>
-              <div className="space-y-3">
+              <div className="grid md:grid-cols-2 gap-3">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -83,32 +71,43 @@ const About = () => {
               </div>
             </div>
 
-            <Button className="btn-medical rounded-full px-8 group">
-              Ver currículo completo
-              <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="btn-medical rounded-full px-8 group">
+                Ver currículo completo
+                <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+
+              <a 
+                href="http://lattes.cnpq.br/3560266661123900" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium border border-primary/20 rounded-full px-8 py-3 hover:bg-primary/5"
+              >
+                <BookOpen className="h-4 w-4" />
+                Currículo Lattes
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
-          {/* Stats Cards */}
-          <div className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat, index) => (
-                <Card key={index} className="card-medical rounded-2xl">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 rounded-2xl gradient-medical flex items-center justify-center text-white mx-auto mb-4">
-                      {stat.icon}
-                    </div>
-                    <div className="text-2xl font-bold text-foreground mb-1">
-                      {stat.value}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {stat.label}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
+          {/* Specialty Card - Takes 1 column */}
+          <div className="lg:col-span-1">
+            <Card className="card-medical rounded-2xl">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 rounded-2xl gradient-medical flex items-center justify-center text-white mx-auto mb-6">
+                  <Award className="h-8 w-8" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">
+                  15+ Anos
+                </div>
+                <div className="text-sm text-muted-foreground mb-4">
+                  de Experiência
+                </div>
+                <div className="text-lg font-semibold text-primary">
+                  Oncologia Cutânea
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
