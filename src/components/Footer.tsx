@@ -43,7 +43,9 @@ const Footer = () => {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/dr.andremolina?igsh=ZDZ2bTFocGlsbjcy&utm_source=qr" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-primary transition-colors flex items-center justify-center"
                 >
                   <Instagram className="h-5 w-5" />
