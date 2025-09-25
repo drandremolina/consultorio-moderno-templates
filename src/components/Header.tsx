@@ -38,8 +38,27 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
+                Agendar Consulta
+              </Button>
+            </a>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Desktop Navigation - Below main header */}
+        <div className="hidden md:block border-t border-border/30">
+          <nav className="flex items-center space-x-8 py-3">
             <a href="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Início
             </a>
@@ -59,23 +78,6 @@ const Header = () => {
               Contato
             </a>
           </nav>
-
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
-                Agendar Consulta
-              </Button>
-            </a>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
         {/* Mobile Navigation */}
