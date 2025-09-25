@@ -12,6 +12,7 @@ import {
   ChevronDown,
   ChevronUp
 } from "lucide-react";
+import perfusaoIlustracaoImg from "@/assets/perfusao-isolada-ilustracao.jpg";
 import { useState } from "react";
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
@@ -93,7 +94,51 @@ const Cirurgias = () => {
         "Alta concentração de medicamentos",
         "Preservação da função do membro",
         "Alternativa à amputação"
-      ]
+      ],
+      fullContent: {
+        whatIs: "A perfusão isolada de membro (ILP) é um procedimento especializado desenvolvido nos anos 1950 como alternativa à amputação. Permite administrar altas doses de quimioterapia diretamente no membro afetado, isolando-o da circulação sistêmica para tratar melanoma avançado e sarcomas de tecidos moles.",
+        whenIndicated: [
+          "Metástases de melanoma confinadas a um único membro",
+          "Sarcomas de tecidos moles dos braços ou pernas",
+          "Tumores irressecáveis ou com alto risco de amputação",
+          "Lesões primárias limítrofe para ressecção",
+          "Metástases em trânsito do melanoma"
+        ],
+        howItWorks: [
+          "Isolamento vascular: clampeamento da artéria e veia principal do membro",
+          "Aplicação de torniquete para isolar completamente a circulação",
+          "Conexão de tubos a uma máquina de perfusão extracorpórea",
+          "Circulação de quimioterapia aquecida (39-40°C) por 60-90 minutos",
+          "Resfriamento e lavagem completa para remover medicamentos residuais",
+          "Reconexão dos vasos sanguíneos e fechamento da incisão"
+        ],
+        medications: [
+          "Melfalan: Quimioterápico principal que atua diretamente nas células tumorais",
+          "TNF Beromun (tasonermina): Fator de necrose tumoral que potencializa o efeito da quimioterapia, especialmente eficaz em sarcomas",
+          "TNF Beromun sempre usado em combinação com melfalan em perfusão de 90 minutos"
+        ],
+        efficacy: [
+          "Taxa de resposta: 75% dos casos tratados",
+          "Excelente controle local da doença",
+          "Melhora significativa da sobrevida"
+        ],
+        sideEffects: [
+          "Vermelhidão intensa (primeiras 48 horas)",
+          "Descamação e bolhas na pele",
+          "Inchaço e possível linfedema",
+          "Alterações nas unhas",
+          "Descoloração da pele (pode ser permanente)",
+          "Dor, rigidez e formigamento temporários",
+          "Risco de perda do membro (procedimento de grande porte e alta complexidade)"
+        ],
+        advantages: [
+          "Evita a amputação em muitos casos",
+          "Permite altas doses de quimioterapia, com reduzida toxicidade sistêmica",
+          "Pode trazer controle local eficaz da doença",
+          "Preservação da função do membro",
+          "Alternativa para tumores irressecáveis"
+        ]
+      }
     }
   ];
 
@@ -275,6 +320,114 @@ const Cirurgias = () => {
                                 </div>
                               ))}
                             </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Expanded Content for Perfusão Isolada de Membro */}
+                      {expandedProcedimento === index && index === 3 && procedimento.fullContent && (
+                        <div className="mt-8 space-y-8 p-6 bg-muted/30 rounded-xl">
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">O que é?</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.whatIs}</p>
+                          </div>
+
+                          {/* Illustration */}
+                          <div className="flex justify-center my-6">
+                            <img 
+                              src={perfusaoIlustracaoImg} 
+                              alt="Ilustração do procedimento de perfusão isolada de membro" 
+                              className="max-w-full h-auto rounded-lg shadow-lg"
+                            />
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Quando é indicada?</h3>
+                            <p className="text-muted-foreground">A perfusão isolada de membro é recomendada para:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.whenIndicated.map((indication, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{indication}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Como funciona o procedimento?</h3>
+                            <p className="text-muted-foreground">O procedimento é realizado em etapas precisas:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.howItWorks.map((step, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{step}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Medicamentos utilizados</h3>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.medications.map((medication, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{medication}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Eficácia do tratamento</h3>
+                            <p className="text-muted-foreground">Estudos mostram resultados promissores:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.efficacy.map((result, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{result}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Efeitos colaterais</h3>
+                            <p className="text-muted-foreground">Os efeitos são geralmente limitados ao membro tratado:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.sideEffects.map((effect, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{effect}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Vantagens do procedimento</h3>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.advantages.map((advantage, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{advantage}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Conclusão</h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              A perfusão isolada de membro representa uma opção terapêutica valiosa para pacientes com melanoma avançado e sarcomas de tecidos moles confinados aos membros. O procedimento oferece boas taxas de resposta e controle local, frequentemente evitando a necessidade de amputação. O uso combinado de Beromun pode aumentar a eficácia.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                              Este tratamento altamente especializado deve ser realizado em centros de referência com equipe experiente, incluindo cirurgiões oncológicos e perfusionistas qualificados.
+                            </p>
+                            <p className="text-sm text-muted-foreground italic">
+                              Este conteúdo é informativo e não substitui a consulta médica especializada.
+                            </p>
                           </div>
                         </div>
                       )}
