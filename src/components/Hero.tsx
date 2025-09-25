@@ -29,22 +29,6 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Anos de experiência</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">2000+</div>
-                <div className="text-sm text-muted-foreground">Pacientes atendidos</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">95%</div>
-                <div className="text-sm text-muted-foreground">Taxa de sucesso</div>
-              </div>
-            </div>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">

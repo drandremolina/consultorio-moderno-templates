@@ -94,10 +94,10 @@ const Sobre = () => {
                     </h2>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      O Dr. André Molina é cirurgião oncológico especializado em oncologia cutânea, 
-                      com sólida formação acadêmica e vasta experiência clínica no tratamento de 
-                      tumores de pele, especialmente melanoma e carcinomas cutâneos.
-                    </p>
+                       O Dr. André Molina é cirurgião oncológico especializado em oncologia cutânea, 
+                       com vasta experiência clínica no tratamento de tumores de pele, especialmente 
+                       melanoma e carcinomas cutâneos.
+                     </p>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Sua trajetória profissional é marcada pela dedicação ao aprimoramento 
@@ -138,16 +138,16 @@ const Sobre = () => {
             </div>
           </section>
 
-          {/* Formação Acadêmica */}
+          {/* Especialidades */}
           <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
             <div className="container mx-auto px-4">
               <div className="space-y-12">
                 <div className="text-center space-y-4">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                    Formação Acadêmica
+                    Especialidades
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Sólida formação em instituições de renome nacional e internacional.
+                    Áreas de atuação e procedimentos especializados.
                   </p>
                 </div>
 

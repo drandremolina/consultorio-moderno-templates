@@ -19,10 +19,7 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: <GraduationCap className="h-6 w-6" />, label: "Formação", value: "USP" },
-    { icon: <Award className="h-6 w-6" />, label: "Experiência", value: "15+ anos" },
-    { icon: <Users className="h-6 w-6" />, label: "Pacientes", value: "2000+" },
-    { icon: <BookOpen className="h-6 w-6" />, label: "Publicações", value: "50+" }
+    { icon: <Award className="h-6 w-6" />, label: "Especialidade", value: "Oncologia Cutânea" }
   ];
 
   return (
@@ -48,9 +45,8 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Com mais de 15 anos de experiência em cirurgia oncológica, o Dr. André Medina 
-                é reconhecido pela excelência no tratamento de tumores complexos e pelo cuidado 
-                humanizado com seus pacientes.
+                O Dr. André Molina é reconhecido pela excelência no tratamento de tumores complexos 
+                e pelo cuidado humanizado com seus pacientes.
               </p>
               
               <p>
@@ -68,7 +64,7 @@ const About = () => {
 
             {/* Achievements */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground">Formação e Especializações</h3>
+              <h3 className="text-xl font-semibold text-foreground">Especializações</h3>
               <div className="space-y-3">
                 {achievements.map((achievement, index) => (
                   <div key={index} className="flex items-start gap-3">
