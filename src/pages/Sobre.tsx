@@ -119,6 +119,20 @@ const Sobre = () => {
                     </p>
                   </div>
 
+                  {/* Lattes CV Link */}
+                  <div className="pt-4">
+                    <a 
+                      href="http://lattes.cnpq.br/3560266661123900" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
+                    >
+                      <BookOpen className="h-4 w-4" />
+                      Currículo Lattes
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </div>
+
                   <div className="flex items-center gap-4 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl">
                     <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                       <Award className="h-6 w-6 text-primary" />
