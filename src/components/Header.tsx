@@ -37,7 +37,7 @@ const Header = () => {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-foreground">Dr. André Molina</h2>
-                <p className="text-sm text-muted-foreground">Oncologia Cutânea</p>
+                <p className="text-sm text-muted-foreground">Cirurgia Oncológica - Oncologia Cutânea</p>
               </div>
             </div>
 
