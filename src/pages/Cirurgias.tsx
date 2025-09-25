@@ -5,10 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
   Scissors, 
-  Search, 
-  Target, 
-  Heart, 
-  Microscope, 
   ShieldCheck,
   ArrowRight,
   Clock,
@@ -19,7 +15,6 @@ import { Helmet } from "react-helmet";
 const Cirurgias = () => {
   const procedimentos = [
     {
-      icon: <Target className="h-8 w-8" />,
       title: "Ampliação de Margens",
       description: "Cirurgia para garantir a remoção completa do tumor com margens de segurança adequadas, reduzindo o risco de recidiva local.",
       details: [
@@ -30,7 +25,6 @@ const Cirurgias = () => {
       ]
     },
     {
-      icon: <Scissors className="h-8 w-8" />,
       title: "Cirurgia de Mohs",
       description: "Técnica cirúrgica para remoção de tumores cutâneos com preservação máxima de tecido saudável.",
       details: [
@@ -40,7 +34,6 @@ const Cirurgias = () => {
       ]
     },
     {
-      icon: <Search className="h-8 w-8" />,
       title: "Biópsia de Linfonodo Sentinela",
       description: "Procedimento minimamente invasivo para detectar disseminação de células tumorais nos linfonodos regionais.",
       details: [
@@ -51,7 +44,6 @@ const Cirurgias = () => {
       ]
     },
     {
-      icon: <Heart className="h-8 w-8" />,
       title: "Perfusão Isolada de Membro",
       description: "Tratamento regional avançado para melanomas e sarcomas de extremidades com alta concentração de quimioterápicos.",
       details: [
@@ -105,12 +97,8 @@ const Cirurgias = () => {
             <div className="container mx-auto px-4">
               <div className="space-y-16">
                 {procedimentos.map((procedimento, index) => (
-                  <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
-                        {procedimento.icon}
-                      </div>
-                      
+                  <div key={index} className="max-w-4xl mx-auto">
+                    <div className="space-y-6">
                       <div className="space-y-4">
                         <h2 className="text-3xl font-bold text-foreground">
                           {procedimento.title}
@@ -134,23 +122,6 @@ const Cirurgias = () => {
                         Saiba mais
                         <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
                       </Button>
-                    </div>
-
-                    <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                      <Card className="overflow-hidden border-0 shadow-lg">
-                        <CardContent className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
-                          <div className="aspect-video bg-white rounded-xl flex items-center justify-center">
-                            <div className="text-center space-y-4">
-                              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white">
-                                {procedimento.icon}
-                              </div>
-                              <div className="text-muted-foreground">
-                                Imagem ilustrativa do procedimento
-                              </div>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
                     </div>
                   </div>
                 ))}
