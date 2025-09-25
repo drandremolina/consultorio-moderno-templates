@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Shield, Award } from "lucide-react";
 import heroImage from "@/assets/hero-medical-professional.jpg";
+import option1 from "@/assets/hero-option-1.jpg";
+import option2 from "@/assets/hero-option-2.jpg"; 
+import option3 from "@/assets/hero-option-3.jpg";
+import option4 from "@/assets/hero-option-4.jpg";
+import option5 from "@/assets/hero-option-5.jpg";
 
 const Hero = () => {
   return (
@@ -64,28 +69,90 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="card-medical rounded-3xl overflow-hidden">
-              <img
-                src={heroImage}
-                alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
-                className="w-full h-[600px] object-cover"
-              />
-            </div>
+          {/* Image Options Preview */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-center">Escolha uma opção de imagem:</h3>
             
-            {/* Card overlay */}
-            <div className="absolute bottom-6 left-6 right-6">
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 card-medical">
-                <h3 className="text-lg font-semibold text-foreground mb-2">
-                  ONCOLOGIA CUTÂNEA
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Especialista em melanoma, carcinoma basocelular e outros tumores de pele
-                </p>
-                <Button className="btn-medical rounded-full text-sm">
-                  Saiba mais
-                </Button>
+            {/* Current Image */}
+            <div className="relative">
+              <div className="card-medical rounded-3xl overflow-hidden">
+                <img
+                  src={heroImage}
+                  alt="Opção Atual - Dr. André Molina"
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+              <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-sm">
+                Atual
+              </div>
+            </div>
+
+            {/* New Options Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative">
+                <div className="card-medical rounded-2xl overflow-hidden">
+                  <img
+                    src={option1}
+                    alt="Opção 1 - Ambiente médico com estetoscópio"
+                    className="w-full h-[200px] object-cover"
+                  />
+                </div>
+                <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded text-sm">
+                  Opção 1
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="card-medical rounded-2xl overflow-hidden">
+                  <img
+                    src={option2}
+                    alt="Opção 2 - Equipamentos de oncologia"
+                    className="w-full h-[200px] object-cover"
+                  />
+                </div>
+                <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded text-sm">
+                  Opção 2
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="card-medical rounded-2xl overflow-hidden">
+                  <img
+                    src={option3}
+                    alt="Opção 3 - Consultório médico"
+                    className="w-full h-[200px] object-cover"
+                  />
+                </div>
+                <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded text-sm">
+                  Opção 3
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="card-medical rounded-2xl overflow-hidden">
+                  <img
+                    src={option4}
+                    alt="Opção 4 - Laboratório médico"
+                    className="w-full h-[200px] object-cover"
+                  />
+                </div>
+                <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded text-sm">
+                  Opção 4
+                </div>
+              </div>
+            </div>
+
+            {/* Option 5 */}
+            <div className="relative">
+              <div className="card-medical rounded-3xl overflow-hidden">
+                <img
+                  src={option5}
+                  alt="Opção 5 - Diplomas e certificados"
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+              <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded text-sm">
+                Opção 5
               </div>
             </div>
           </div>
