@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-cyan-500" />
-              <span>Rua Adma Jafet, 74, cj 161 - Bela Vista</span>
+              <a href="https://maps.app.goo.gl/aH8Fc7qk3miLDEro6" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 transition-colors">Rua Adma Jafet, 74, cj 161 - Bela Vista</a>
             </div>
           </div>
           <div className="text-cyan-500 font-medium">

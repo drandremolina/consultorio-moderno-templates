@@ -225,9 +225,11 @@ const Sobre = () => {
                         </div>
                         
                         <div className="space-y-2">
-                          <p className="text-foreground font-medium">Rua Adma Jafet, 74, cj 161</p>
-                          <p className="text-muted-foreground">Bela Vista, São Paulo - SP</p>
-                          <p className="text-muted-foreground">CEP 01308-050</p>
+                          <a href="https://maps.app.goo.gl/aH8Fc7qk3miLDEro6" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                            <p className="text-foreground font-medium hover:text-primary transition-colors">Rua Adma Jafet, 74, cj 161</p>
+                            <p className="text-muted-foreground hover:text-primary transition-colors">Bela Vista, São Paulo - SP</p>
+                            <p className="text-muted-foreground hover:text-primary transition-colors">CEP 01308-050</p>
+                          </a>
                         </div>
                       </div>
                     </CardContent>

@@ -97,10 +97,10 @@ const Footer = () => {
               
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
+                <a href="https://maps.app.goo.gl/aH8Fc7qk3miLDEro6" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   <p>Rua Adma Jafet, 74, cj 161</p>
                   <p>Bela Vista, São Paulo - SP CEP 01308-050</p>
-                </div>
+                </a>
               </div>
             </div>
             
