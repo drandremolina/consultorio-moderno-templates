@@ -15,9 +15,16 @@ const AIOptimization = ({ page = "home", customTerms = [] }: AIOptimizationProps
       "cirurgião oncológico",
       "oncologia cutânea",
       "melanoma",
+      "tratamento melanoma",
       "carcinoma basocelular",
+      "tratamento carcinoma basocelular",
       "carcinoma espinocelular",
       "câncer de pele",
+      "biópsia linfonodo sentinela",
+      "biópsia de linfonodo sentinela",
+      "perfusão isolada de membro",
+      "perfusão isolada membro",
+      "cirurgia de Mohs",
       "São Paulo",
       "SP"
     ];
@@ -25,10 +32,15 @@ const AIOptimization = ({ page = "home", customTerms = [] }: AIOptimizationProps
     const pageTerms = {
       home: [
         "cirurgia oncológica São Paulo",
-        "tratamento melanoma",
+        "tratamento melanoma São Paulo",
+        "especialista melanoma",
+        "tratamento carcinoma basocelular São Paulo",
         "especialista câncer pele",
         "oncologista cutâneo",
-        "dermatologia oncológica"
+        "dermatologia oncológica",
+        "cirurgia melanoma",
+        "biópsia linfonodo sentinela São Paulo",
+        "perfusão isolada membro São Paulo"
       ],
       about: [
         "formação médica",
@@ -39,12 +51,16 @@ const AIOptimization = ({ page = "home", customTerms = [] }: AIOptimizationProps
       ],
       surgeries: [
         "cirurgia de Mohs",
-        "biópsia linfonodo sentinela", 
+        "biópsia linfonodo sentinela",
+        "biópsia de linfonodo sentinela",
         "perfusão isolada membro",
+        "perfusão isolada de membro",
         "ressecção tumoral",
         "microcirurgia oncológica",
         "cirurgia dermatológica",
-        "excisão melanoma"
+        "excisão melanoma",
+        "cirurgia melanoma avançado",
+        "linfadenectomia terapêutica"
       ],
       contact: [
         "agendar consulta oncologia",
@@ -55,10 +71,15 @@ const AIOptimization = ({ page = "home", customTerms = [] }: AIOptimizationProps
       oncology: [
         "tipos câncer pele",
         "sintomas melanoma",
+        "sintomas carcinoma basocelular",
         "diagnóstico carcinoma",
+        "diagnóstico melanoma",
         "estadiamento tumor",
+        "estadiamento melanoma",
         "imunoterapia melanoma",
-        "fatores risco câncer pele"
+        "tratamento imunoterapia melanoma",
+        "fatores risco câncer pele",
+        "prevenção melanoma"
       ],
       blog: [
         "artigos oncologia cutânea",
