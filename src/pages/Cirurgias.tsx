@@ -31,7 +31,35 @@ const Cirurgias = () => {
         "Planejamento cirúrgico personalizado",
         "Preservação máxima de tecido saudável",
         "Acompanhamento pós-operatório especializado"
-      ]
+      ],
+      fullContent: {
+        intro: "Após o diagnóstico de um melanoma, confirmado por uma biópsia, é muito comum que o médico indique um segundo procedimento cirúrgico chamado ampliação de margens. Embora o nome possa parecer técnico, o conceito por trás dele é simples e fundamental para garantir o sucesso do tratamento.",
+        whatIs: "A ampliação de margens, também conhecida como excisão ampla, é uma cirurgia que consiste em remover uma área adicional de pele saudável ao redor da cicatriz da biópsia inicial. O objetivo é criar uma margem de segurança, garantindo que todas as células cancerígenas, incluindo aquelas que não são visíveis a olho nu, sejam completamente eliminadas.",
+        analogy: "Para entender melhor, imagine que você encontra uma mancha de mofo em uma parede. Você não limpa apenas a mancha visível; você limpa também uma área ao redor para ter certeza de que eliminou qualquer esporo que possa ter se espalhado. A lógica da ampliação de margens é a mesma: remover o tumor primário e quaisquer células de melanoma que possam ter se infiltrado na pele adjacente.",
+        whyNecessary: "O melanoma tem a capacidade de enviar \"raízes\" microscópicas para a pele ao redor do tumor principal. Essas células são invisíveis durante o exame clínico e, se não forem removidas, podem fazer com que o câncer volte a crescer no mesmo local, o que é chamado de recidiva local.",
+        benefits: [
+          "Assegura a remoção completa do tumor, eliminando qualquer célula cancerígena que possa ter permanecido no local",
+          "Previne significativamente a recidiva local, reduzindo drasticamente o risco de o melanoma retornar",
+          "Um controle local eficaz é o primeiro passo fundamental para um tratamento bem-sucedido e aumenta as chances de cura"
+        ],
+        marginDetermination: "O tamanho da margem de segurança não é escolhido aleatoriamente. Ele é determinado principalmente pela espessura do melanoma, uma medida conhecida como Índice de Breslow, que é calculada durante a análise microscópica da biópsia. Quanto mais espesso o melanoma, maior a probabilidade de existirem células espalhadas na pele adjacente e, portanto, maior a margem necessária para garantir a remoção completa.",
+        marginTable: [
+          { thickness: "Melanoma in situ", margin: "0,5 a 1 cm", characteristics: "Limitado à camada superficial da pele" },
+          { thickness: "Até 1 mm", margin: "1 cm", characteristics: "Melanomas finos, menor risco" },
+          { thickness: "Entre 1 e 2 mm", margin: "1 a 2 cm", characteristics: "Espessura intermediária" },
+          { thickness: "Maior que 2 mm", margin: "2 cm", characteristics: "Melanomas espessos, maior risco" }
+        ],
+        depthNote: "Além da margem lateral (ao redor da lesão), a cirurgia também remove o tecido em profundidade, geralmente até uma camada de tecido conjuntivo chamada fáscia muscular. Isso garante que a remoção seja completa tanto horizontalmente quanto verticalmente.",
+        procedure: "A ampliação de margens é geralmente realizada como um procedimento ambulatorial, sob anestesia local. O cirurgião marca cuidadosamente a área a ser removida, respeitando as margens recomendadas, e procede com a excisão. O tecido removido é enviado para análise patológica para confirmar que as margens estão livres de células cancerígenas.",
+        reconstruction: "Após a remoção, dependendo do tamanho da área excisada, a ferida pode ser fechada diretamente com pontos ou pode necessitar de técnicas reconstrutivas mais elaboradas, como enxertos de pele ou retalhos locais. O objetivo é sempre obter o melhor resultado oncológico possível, preservando a função e a aparência da área tratada.",
+        specialLocations: "Em áreas anatomicamente delicadas ou funcionalmente importantes, como o rosto, pálpebras, orelhas ou dedos, os cirurgiões precisam equilibrar cuidadosamente a segurança oncológica com a preservação da função e da estética. Nesses casos, as margens podem ser ligeiramente adaptadas ou técnicas cirúrgicas especiais podem ser utilizadas para preservar o máximo de tecido saudável possível.",
+        recovery: "A maioria dos pacientes se recupera bem da ampliação de margens, com cicatrização completa em algumas semanas. É importante seguir todas as orientações médicas pós-operatórias, incluindo cuidados com a ferida, uso de medicações prescritas e comparecimento às consultas de acompanhamento.",
+        pathologyResults: "O resultado da análise patológica das margens é crucial. Quando as margens estão \"livres\" ou \"negativas\" (sem células cancerígenas), isso indica que o tumor foi completamente removido. Em casos raros onde as margens são \"positivas\" (com células cancerígenas), pode ser necessária uma nova cirurgia para ampliar ainda mais a área de excisão.",
+        followUp: "Mesmo após uma ampliação de margens bem-sucedida, o acompanhamento médico regular é essencial. Isso inclui exames clínicos periódicos para detectar possíveis recidivas locais ou o desenvolvimento de novos melanomas, além de exames de imagem quando indicados para monitorar possível disseminação da doença.",
+        conclusion: "A ampliação de margens representa um passo crucial e rotineiro no tratamento cirúrgico do melanoma. Embora signifique passar por uma segunda pequena cirurgia, este procedimento oferece a melhor chance de remover completamente a doença do local original, prevenindo seu retorno e constituindo um pilar fundamental para a cura.",
+        goldStandard: "O procedimento é baseado em décadas de pesquisa científica e experiência clínica, sendo considerado o padrão-ouro para o controle local do melanoma. Quando realizada por cirurgiões experientes e seguindo as diretrizes estabelecidas, a ampliação de margens oferece excelentes resultados oncológicos com mínima morbidade.",
+        finalNote: "É natural ter dúvidas ou ansiedade sobre qualquer procedimento cirúrgico. Converse abertamente com seu médico sobre o procedimento, tire todas as suas dúvidas e discuta suas preocupações. Uma comunicação clara com a equipe médica é fundamental para que você se sinta seguro e bem informado durante todo o processo de tratamento."
+      }
     },
     {
       title: "Cirurgia de Mohs",
@@ -238,6 +266,96 @@ const Cirurgias = () => {
                           <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
                         )}
                       </Button>
+
+                      {/* Expanded Content for Ampliação de Margens */}
+                      {expandedProcedimento === index && index === 0 && procedimento.fullContent && (
+                        <div className="mt-8 space-y-8 p-6 bg-muted/30 rounded-xl">
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Entendendo a Ampliação de Margens no Tratamento do Melanoma</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.intro}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">O que é a Ampliação de Margens?</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.whatIs}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.analogy}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Por que a Ampliação de Margens é Necessária?</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.whyNecessary}</p>
+                            <p className="text-muted-foreground leading-relaxed mt-4">A ampliação de margens é um procedimento padrão e essencial que oferece múltiplos benefícios:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.benefits.map((benefit, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{benefit}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Como é Determinado o Tamanho da Margem?</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.marginDetermination}</p>
+                            
+                            <div className="overflow-x-auto mt-4">
+                              <table className="w-full border-collapse">
+                                <thead>
+                                  <tr className="bg-primary/10">
+                                    <th className="border border-border p-3 text-left font-semibold text-foreground">Espessura do Melanoma (Índice de Breslow)</th>
+                                    <th className="border border-border p-3 text-left font-semibold text-foreground">Margem de Segurança Recomendada</th>
+                                    <th className="border border-border p-3 text-left font-semibold text-foreground">Características</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {procedimento.fullContent.marginTable.map((row, idx) => (
+                                    <tr key={idx} className="hover:bg-muted/20">
+                                      <td className="border border-border p-3 text-muted-foreground">{row.thickness}</td>
+                                      <td className="border border-border p-3 text-muted-foreground">{row.margin}</td>
+                                      <td className="border border-border p-3 text-muted-foreground">{row.characteristics}</td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <p className="text-muted-foreground leading-relaxed mt-4">{procedimento.fullContent.depthNote}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">O Procedimento Cirúrgico</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.procedure}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.reconstruction}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Considerações Especiais por Localização</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.specialLocations}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Resultados e Recuperação</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.recovery}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.pathologyResults}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Importância do Acompanhamento</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.followUp}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Conclusão</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.conclusion}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.goldStandard}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.finalNote}</p>
+                            <p className="text-sm text-muted-foreground italic mt-6">
+                              <strong>Aviso Legal:</strong> Este conteúdo tem caráter exclusivamente informativo e educativo, não substituindo em hipótese alguma a consulta com um médico especialista. As decisões sobre o tratamento devem sempre ser tomadas em conjunto com sua equipe médica, considerando as particularidades de cada caso.
+                            </p>
+                          </div>
+                        </div>
+                      )}
 
                       {/* Expanded Content for Biópsia de Linfonodo Sentinela */}
                       {expandedProcedimento === index && index === 2 && procedimento.fullContent && (
