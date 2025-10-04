@@ -62,7 +62,7 @@ const Cirurgias = () => {
       }
     },
     {
-      title: "Cirurgia de Mohs",
+      title: "Cirurgia de Mohs e técnica \"En Face\"",
       description: "Técnica cirúrgica para remoção de tumores cutâneos com preservação máxima de tecido saudável.",
       details: [
         "Controle microscópico das margens em tempo real",
