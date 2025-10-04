@@ -210,7 +210,7 @@ const Cirurgias = () => {
                     <div className="space-y-6">
                       <div className="space-y-4">
                         <h2 className="text-3xl font-bold text-foreground">
-                          {procedimento.title}
+                          {index === 0 ? "Tratamento Melanoma - " : ""}{procedimento.title}
                         </h2>
                         
                         <p className="text-lg text-muted-foreground leading-relaxed">
