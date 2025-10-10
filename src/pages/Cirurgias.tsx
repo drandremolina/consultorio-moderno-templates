@@ -68,7 +68,55 @@ const Cirurgias = () => {
         "Controle microscópico das margens em tempo real",
         "Preservação de tecido normal",
         "Menor necessidade de reconstrução"
-      ]
+      ],
+      fullContent: {
+        intro: "Quando se trata de remover um câncer de pele, especialmente em áreas visíveis e delicadas como o rosto, dois objetivos são primordiais: remover todo o tumor para evitar que ele volte e preservar o máximo de pele saudável possível para garantir o melhor resultado estético e funcional. Duas técnicas cirúrgicas se destacam por alcançar esses objetivos com excelência: a Cirurgia de Mohs e a Técnica En Face.",
+        whyBetter: "Ambas resultam em melhores resultados no tratamento dos carcinomas de pele (como o carcinoma basocelular e o espinocelular) por permitirem uma análise completa das margens cirúrgicas em tempo real, ou seja, durante a própria cirurgia. Isso representa uma evolução significativa em relação à cirurgia convencional, onde o resultado da análise das margens só é conhecido dias após o procedimento.",
+        mohsTitle: "A Cirurgia de Mohs",
+        mohsIntro: "A Cirurgia Micrográfica de Mohs é considerada a técnica mais precisa e eficaz para tratar muitos tipos de câncer de pele. Desenvolvida pelo Dr. Frederic E. Mohs nos anos 1930 e aperfeiçoada ao longo das décadas, seu grande diferencial é a combinação de cirurgia e análise microscópica em um único procedimento ambulatorial.",
+        mohsSteps: [
+          "O cirurgião remove a camada visível do tumor, juntamente com uma fina camada de tecido ao redor. Esta primeira remoção é conservadora, retirando apenas o mínimo necessário.",
+          "O tecido removido é levado ao laboratório (geralmente localizado na mesma clínica), onde é cuidadosamente mapeado e dividido em seções. O próprio cirurgião examina cada seção ao microscópio. Este mapa detalhado permite localizar exatamente onde, no paciente, eventuais células cancerígenas foram encontradas.",
+          "Se o microscópio revelar que ainda existem células cancerígenas nas bordas, o cirurgião retorna ao paciente e remove outra fina camada de pele, mas apenas na localização exata onde o câncer foi identificado no mapa. Isso significa que áreas livres de tumor são preservadas.",
+          "Este ciclo se repete quantas vezes forem necessárias até que o exame microscópico mostre que não há mais nenhuma célula cancerígena nas margens. Só então a cirurgia é finalizada e a ferida é reconstruída."
+        ],
+        mohsAdvantages: [
+          "Taxas de cura excepcionais, podendo chegar a 99% para tumores que não foram tratados anteriormente e 94% para tumores recorrentes",
+          "Máxima preservação de pele saudável, resultando em feridas menores e cicatrizes mais discretas",
+          "Procedimento realizado em uma única visita, com anestesia local",
+          "Análise de 100% das margens cirúrgicas, algo impossível na cirurgia convencional"
+        ],
+        enFaceTitle: "A Técnica En Face: Uma Alternativa Precisa e Acessível",
+        enFaceIntro: "A técnica de congelação \"en face\" representa outra abordagem inovadora para a análise intraoperatória das margens cirúrgicas. Embora o conceito seja similar ao da Cirurgia de Mohs (verificar as margens durante a cirurgia), a maneira como o tecido é processado apresenta algumas diferenças técnicas. Esta técnica se apresenta como uma excelente alternativa, especialmente quando a Cirurgia de Mohs não está disponível ou quando se busca uma opção mais acessível.",
+        enFaceSteps: [
+          "Remoção do Tumor: O cirurgião remove o tumor com uma margem de segurança inicial, de forma similar a uma cirurgia convencional, mas com planejamento específico para a análise posterior.",
+          "Processamento Especializado das Margens: O tecido removido é levado ao laboratório, onde o patologista realiza um processamento específico. Em vez de analisar o tumor em si, são cortadas as bordas (margens periféricas e profundas) em fatias finas e paralelas à superfície de corte. É como se estivéssemos \"descascando\" a borda da peça cirúrgica para examiná-la de frente, daí o nome \"en face\" (de frente, em francês).",
+          "Análise por Congelação Rápida: Essas fatias são congeladas rapidamente a -30°C e cortadas em seções microscópicas de 5 micrômetros. Após coloração, são examinadas ao microscópio pelo patologista.",
+          "Ampliação Direcionada: Se o patologista encontrar células cancerígenas em alguma das margens, ele informa imediatamente ao cirurgião, que ainda está com o paciente na sala de cirurgia. O cirurgião então remove mais tecido apenas na área comprometida, seguindo um mapa preciso.",
+          "Confirmação Final: O processo é repetido até que todas as margens estejam livres de tumor, garantindo remoção completa antes do fechamento da ferida."
+        ],
+        enFaceAdvantages: [
+          "Avaliação de 100% das margens cirúrgicas",
+          "Concordância com o exame definitivo (processamento em parafina) de 98%",
+          "Taxas de recidiva impressionantemente baixas: 1,4% no geral, 0,86% para tumores primários e 3,7% para tumores recorrentes",
+          "Maior acessibilidade, pode ser realizada em centros que não possuem infraestrutura específica para Cirurgia de Mohs",
+          "Menor custo operacional"
+        ],
+        intraoperativeControl: "A superioridade tanto da Cirurgia de Mohs quanto da técnica \"en face\" em relação à cirurgia convencional reside fundamentalmente no controle intraoperatório das margens. Esta diferença é transformadora para os resultados do tratamento.",
+        conventionalVsAdvanced: "Na cirurgia convencional, o cirurgião trabalha \"às cegas\" em relação às margens microscópicas. Ele remove o tumor com uma margem de segurança baseada em protocolos estatísticos, mas sem saber se essa margem foi suficiente. O material é enviado para análise patológica e o resultado só chega dias depois. Se as margens estiverem comprometidas (contendo células cancerígenas), o paciente precisa retornar para uma nova cirurgia, passando novamente por todo o processo de preparação, anestesia e recuperação.",
+        realTimeConfirmation: "Com as técnicas de Mohs e \"en face\", essa incerteza é eliminada. A análise microscópica acontece em tempo real, durante a própria cirurgia. O cirurgião tem certeza absoluta de que removeu todo o tumor antes de fechar a ferida. Isso significa que o paciente sai da sala de cirurgia com a garantia de que o tratamento foi completo.",
+        indications: [
+          "Carcinomas em localizações de alto risco, onde a preservação de tecido é crucial",
+          "Tumores na face, especialmente ao redor dos olhos, nariz, lábios e orelhas",
+          "Tumores recorrentes (que voltaram após tratamento anterior)",
+          "Tumores com bordas mal definidas",
+          "Tumores grandes ou agressivos",
+          "Casos onde o paciente tem histórico de múltiplos cânceres de pele"
+        ],
+        conclusion: "A Cirurgia de Mohs e a técnica \"en face\" representam avanços fundamentais no tratamento do câncer de pele. Ambas oferecem o que há de mais moderno em termos de precisão cirúrgica: a capacidade de remover completamente o tumor preservando ao máximo o tecido saudável, tudo isso com confirmação microscópica em tempo real.",
+        finalThought: "Enquanto a Cirurgia de Mohs permanece como o padrão-ouro para casos complexos e de alto risco, a técnica \"en face\" emerge como uma alternativa valiosa, oferecendo resultados comparáveis com maior acessibilidade. A escolha entre elas depende de fatores como disponibilidade local, características específicas do tumor e experiência da equipe médica.",
+        hope: "O mais importante é que ambas as técnicas representam uma evolução significativa em relação aos métodos convencionais, oferecendo aos pacientes maiores chances de cura com melhores resultados estéticos e funcionais. Para quem enfrenta um diagnóstico de câncer de pele, saber que existem essas opções avançadas de tratamento traz tranquilidade e esperança de um resultado excelente."
+      }
     },
     {
       title: "Biópsia de Linfonodo Sentinela",
@@ -352,6 +400,105 @@ const Cirurgias = () => {
                             <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.finalNote}</p>
                             <p className="text-sm text-muted-foreground italic mt-6">
                               <strong>Aviso Legal:</strong> Este conteúdo tem caráter exclusivamente informativo e educativo, não substituindo em hipótese alguma a consulta com um médico especialista. As decisões sobre o tratamento devem sempre ser tomadas em conjunto com sua equipe médica, considerando as particularidades de cada caso.
+                            </p>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Expanded Content for Cirurgia de Mohs e Técnica En Face */}
+                      {expandedProcedimento === index && index === 1 && procedimento.fullContent && (
+                        <div className="mt-8 space-y-8 p-6 bg-muted/30 rounded-xl">
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Cirurgia de Mohs e Técnica En Face: Precisão no Tratamento do Câncer de Pele</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.intro}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.whyBetter}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">{procedimento.fullContent.mohsTitle}</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.mohsIntro}</p>
+                            
+                            <h4 className="text-xl font-medium text-foreground mt-4">Como Funciona a Cirurgia de Mohs</h4>
+                            <p className="text-muted-foreground leading-relaxed">O procedimento é meticuloso e realizado em etapas sequenciais, tudo no mesmo dia, enquanto o paciente aguarda confortavelmente entre cada fase:</p>
+                            <div className="space-y-3">
+                              {procedimento.fullContent.mohsSteps.map((step, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white text-sm font-bold flex-shrink-0 mt-0.5">
+                                    {idx + 1}
+                                  </div>
+                                  <span className="text-muted-foreground">{step}</span>
+                                </div>
+                              ))}
+                            </div>
+
+                            <h4 className="text-xl font-medium text-foreground mt-6">Por que a Cirurgia de Mohs é tão Eficaz</h4>
+                            <p className="text-muted-foreground leading-relaxed">A Cirurgia de Mohs oferece vantagens únicas que a tornam o padrão-ouro para muitos carcinomas de pele:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.mohsAdvantages.map((advantage, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{advantage}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">{procedimento.fullContent.enFaceTitle}</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.enFaceIntro}</p>
+                            
+                            <h4 className="text-xl font-medium text-foreground mt-4">Como Funciona a Técnica En Face</h4>
+                            <p className="text-muted-foreground leading-relaxed">O procedimento "en face" segue uma sequência bem estruturada que garante análise completa das margens:</p>
+                            <div className="space-y-3">
+                              {procedimento.fullContent.enFaceSteps.map((step, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white text-sm font-bold flex-shrink-0 mt-0.5">
+                                    {idx + 1}
+                                  </div>
+                                  <span className="text-muted-foreground">{step}</span>
+                                </div>
+                              ))}
+                            </div>
+
+                            <h4 className="text-xl font-medium text-foreground mt-6">Por que a Técnica En Face é tão Eficaz</h4>
+                            <p className="text-muted-foreground leading-relaxed">A técnica "en face" demonstra eficácia comparável à Cirurgia de Mohs em muitos aspectos:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.enFaceAdvantages.map((advantage, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{advantage}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">A Revolução do Controle Intraoperatório</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.intraoperativeControl}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.conventionalVsAdvanced}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.realTimeConfirmation}</p>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Indicações Específicas</h3>
+                            <p className="text-muted-foreground leading-relaxed">Ambas as técnicas são especialmente indicadas para:</p>
+                            <div className="space-y-2">
+                              {procedimento.fullContent.indications.map((indication, idx) => (
+                                <div key={idx} className="flex items-start gap-3">
+                                  <ShieldCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                  <span className="text-muted-foreground">{indication}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <h3 className="text-2xl font-semibold text-foreground">Conclusão</h3>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.conclusion}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.finalThought}</p>
+                            <p className="text-muted-foreground leading-relaxed">{procedimento.fullContent.hope}</p>
+                            <p className="text-sm text-muted-foreground italic mt-6">
+                              <strong>Aviso Legal:</strong> Este conteúdo tem caráter exclusivamente informativo e educativo, não substituindo em hipótese alguma a consulta com um médico especialista. A indicação da melhor técnica para cada caso depende de vários fatores, como o tipo, tamanho, localização do tumor e características individuais do paciente. Sempre discuta com seu médico qual a melhor opção para o seu caso específico.
                             </p>
                           </div>
                         </div>
