@@ -6,9 +6,7 @@ const WhatsAppButton = () => {
   const message = "Olá Dr. André Molina! Gostaria de agendar uma consulta de oncologia cutânea.";
   
   const handleWhatsAppClick = () => {
-    console.log('WhatsApp button clicked');
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    console.log('Opening URL:', url);
     window.location.href = url;
   };
 
