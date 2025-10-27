@@ -61,6 +61,8 @@ const Hero = () => {
                 src={heroImage}
                 alt="Dr. André Molina - Consultório de Cirurgia Oncológica"
                 className="w-full h-[600px] object-cover"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
             
