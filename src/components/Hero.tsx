@@ -18,9 +18,9 @@ const Hero = () => {
                 Especialista em Cirurgia Oncológica
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight">
                 Dr. André Molina
-                <span className="block text-primary">Cirurgião Oncológico</span>
+                <span className="block text-4xl md:text-5xl lg:text-6xl text-primary mt-2">Cirurgião Oncológico</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
