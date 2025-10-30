@@ -54,7 +54,7 @@ const OncologiaCutanea = () => {
     {
       title: "Dermatofibrossarcoma Protuberante",
       incidencia: "Sarcoma cutâneo raro, representa menos de 1% dos sarcomas de partes moles",
-      fatores: ["Trauma prévio", "Predisposição genética", "Radiação prévia"],
+      fatores: ["Predisposição genética", "Radiação prévia"],
       patogenia: "Sarcoma de baixo grau com alta tendência à recidiva local se incompletamente excisado.",
       tratamento: "Excisão cirúrgica com margens amplas, cirurgia de Mohs em casos selecionados, terapia-alvo para casos avançados."
     }
