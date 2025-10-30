@@ -95,7 +95,7 @@ const Sobre = () => {
           {/* Perfil Profissional */}
           <section className="py-20">
             <div className="container mx-auto px-4">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="max-w-4xl mx-auto space-y-12">
                 <div className="space-y-8">
                   <div className="space-y-4">
                     <h2 className="text-3xl font-bold text-foreground">
@@ -151,7 +151,7 @@ const Sobre = () => {
                 <div className="space-y-6">
                   <Card className="overflow-hidden border-0 shadow-lg">
                     <CardContent className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
-                      <div className="aspect-square bg-white rounded-2xl flex items-center justify-center">
+                      <div className="aspect-square bg-white rounded-2xl flex items-center justify-center max-w-md mx-auto">
                         <div className="text-center space-y-4">
                           <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white text-2xl font-bold">
                             AM
@@ -172,7 +172,7 @@ const Sobre = () => {
           {/* Especialidades */}
           <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
             <div className="container mx-auto px-4">
-              <div className="space-y-12">
+              <div className="max-w-4xl mx-auto space-y-12">
                 <div className="text-center space-y-4">
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                     Especialidades
@@ -182,7 +182,7 @@ const Sobre = () => {
                   </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-8">
+                <div className="space-y-8">
                   <Card className="border-0 shadow-lg">
                     <CardContent className="p-8">
                       <div className="space-y-6">
@@ -207,7 +207,6 @@ const Sobre = () => {
                       </div>
                     </CardContent>
                   </Card>
-
 
                   <Card className="border-0 shadow-lg">
                     <CardContent className="p-8">
@@ -251,7 +250,7 @@ const Sobre = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-8">
                   <Card className="border-0 shadow-lg">
                     <CardContent className="p-8">
                       <div className="space-y-6">
