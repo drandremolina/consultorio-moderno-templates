@@ -9,43 +9,43 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 19% 20%;
+    --foreground: 210 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 19% 20%;
+    --card-foreground: 210 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 19% 20%;
+    --popover-foreground: 210 15% 25%;
 
-    --primary: 186 100% 50%;
+    --primary: 186 90% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 186 25% 95%;
-    --secondary-foreground: 186 100% 25%;
+    --secondary: 210 15% 96%;
+    --secondary-foreground: 210 15% 25%;
 
-    --muted: 186 15% 96%;
-    --muted-foreground: 210 19% 45%;
+    --muted: 210 15% 97%;
+    --muted-foreground: 210 12% 50%;
 
-    --accent: 186 100% 50%;
+    --accent: 186 90% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 186 25% 90%;
-    --input: 186 25% 90%;
-    --ring: 186 100% 50%;
+    --border: 210 15% 92%;
+    --input: 210 15% 92%;
+    --ring: 186 90% 48%;
 
     /* Medical theme colors */
-    --medical-primary: 186 100% 50%;
-    --medical-secondary: 186 80% 45%;
-    --medical-light: 186 50% 90%;
-    --medical-gradient: linear-gradient(135deg, hsl(186 100% 50%), hsl(186 80% 45%));
-    --medical-gradient-soft: linear-gradient(135deg, hsl(186 30% 95%), hsl(186 20% 98%));
+    --medical-primary: 186 90% 48%;
+    --medical-secondary: 186 70% 45%;
+    --medical-light: 186 40% 94%;
+    --medical-gradient: linear-gradient(135deg, hsl(186 90% 48%), hsl(186 70% 45%));
+    --medical-gradient-soft: linear-gradient(135deg, hsl(210 20% 98%), hsl(210 15% 99%));
     
     /* Shadows */
-    --shadow-medical: 0 10px 40px -10px hsl(186 100% 50% / 0.3);
-    --shadow-soft: 0 4px 20px -4px hsl(186 30% 20% / 0.1);
+    --shadow-medical: 0 8px 30px -8px hsl(186 90% 48% / 0.2);
+    --shadow-soft: 0 2px 12px -2px hsl(210 20% 30% / 0.08);
 
     --radius: 0.5rem;
 
@@ -122,23 +122,21 @@ All colors MUST be HSL.
 @layer components {
   .btn-medical {
     @apply bg-primary hover:bg-primary/90 text-primary-foreground;
-    box-shadow: var(--shadow-medical);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
   }
   
   .btn-medical:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 50px -10px hsl(186 100% 50% / 0.4);
+    box-shadow: var(--shadow-medical);
   }
   
   .card-medical {
     @apply bg-card border border-border/50;
     box-shadow: var(--shadow-soft);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
   }
   
   .card-medical:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-medical);
   }
   
