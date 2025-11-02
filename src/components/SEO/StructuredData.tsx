@@ -12,7 +12,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
         return {
           "@context": "https://schema.org",
           "@type": "Person",
-          "@id": "https://andremedina.com.br/#person",
+          "@id": "https://drandremolina.lovable.app/#person",
           "name": "Dr. André Molina",
           "alternateName": "André Molina",
           "jobTitle": "Cirurgião Oncológico",
@@ -58,7 +58,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
               "availableLanguage": "Portuguese"
             }
           ],
-          "url": "https://andremedina.com.br",
+          "url": "https://drandremolina.lovable.app",
           "sameAs": [
             "https://wa.me/5511971644726"
           ]
@@ -68,7 +68,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
         return {
           "@context": "https://schema.org",
           "@type": "MedicalOrganization",
-          "@id": "https://andremedina.com.br/#organization",
+          "@id": "https://drandremolina.lovable.app/#organization",
           "name": "Dr. André Molina - Cirurgião Oncológico",
           "description": "Clínica especializada em oncologia cutânea, tratamento de melanoma, carcinomas de pele e cirurgias oncológicas especializadas.",
           "medicalSpecialty": [
@@ -85,7 +85,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
             "addressCountry": "BR"
           },
           "telephone": "+55-11-3258-3636",
-          "url": "https://andremedina.com.br",
+          "url": "https://drandremolina.lovable.app",
           "founder": {
             "@type": "Person",
             "name": "Dr. André Molina"
@@ -118,12 +118,12 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
             "name": "Dr. André Molina",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://andremedina.com.br/logo.png"
+              "url": "https://drandremolina.lovable.app/logo.png"
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": data?.url || "https://andremedina.com.br"
+            "@id": data?.url || "https://drandremolina.lovable.app"
           },
           "datePublished": new Date().toISOString(),
           "dateModified": new Date().toISOString()

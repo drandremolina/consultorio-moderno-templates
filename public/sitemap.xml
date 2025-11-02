@@ -8,7 +8,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://andremedina.com.br/</loc>
+    <loc>https://drandremolina.lovable.app/</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -16,7 +16,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://andremedina.com.br/sobre</loc>
+    <loc>https://drandremolina.lovable.app/sobre</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -24,7 +24,7 @@
 
   <!-- Surgeries Page -->
   <url>
-    <loc>https://andremedina.com.br/cirurgias</loc>
+    <loc>https://drandremolina.lovable.app/cirurgias</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,7 +32,7 @@
 
   <!-- Cutaneous Oncology Page -->
   <url>
-    <loc>https://andremedina.com.br/oncologia-cutanea</loc>
+    <loc>https://drandremolina.lovable.app/oncologia-cutanea</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -40,7 +40,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://andremedina.com.br/contato</loc>
+    <loc>https://drandremolina.lovable.app/contato</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -48,7 +48,7 @@
 
   <!-- Blog Page -->
   <url>
-    <loc>https://andremedina.com.br/blog</loc>
+    <loc>https://drandremolina.lovable.app/blog</loc>
     <lastmod>2025-01-15T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

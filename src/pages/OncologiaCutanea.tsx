@@ -138,7 +138,7 @@ const OncologiaCutanea = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Oncologia Cutânea - Tratamento Especializado de Câncer de Pele" />
         <meta property="og:description" content="Informações detalhadas sobre melanoma, carcinomas e imunoterapia com Dr. André Molina, especialista em oncologia cutânea em São Paulo." />
-        <meta property="og:url" content="https://andremedina.com.br/oncologia-cutanea" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/oncologia-cutanea" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -150,13 +150,13 @@ const OncologiaCutanea = () => {
         <meta name="treatment-modalities" content="Imunoterapia, Cirurgia Oncológica, Terapia Alvo, Radioterapia Adjuvante" />
         <meta name="medical-information" content="Fatores de risco, patogenia, estadiamento, tratamento" />
         
-        <link rel="canonical" href="https://andremedina.com.br/oncologia-cutanea" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/oncologia-cutanea" />
       </Helmet>
       
       <StructuredData type="article" data={{
         title: "Oncologia Cutânea - Tratamento de Câncer de Pele",
         description: "Informações especializadas sobre melanoma, carcinomas e tratamentos em oncologia cutânea",
-        url: "https://andremedina.com.br/oncologia-cutanea"
+        url: "https://drandremolina.lovable.app/oncologia-cutanea"
       }} />
       <AIOptimization page="oncology" />
 

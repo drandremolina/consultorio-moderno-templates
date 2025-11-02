@@ -44,7 +44,7 @@ const Sobre = () => {
         <meta property="og:type" content="profile" />
         <meta property="og:title" content="Sobre Dr. André Molina - Cirurgião Oncológico Especialista" />
         <meta property="og:description" content="Trajetória profissional, formação acadêmica pela Universidade Estadual do Oeste do Paraná e especialização em oncologia cutânea do Dr. André Molina em São Paulo." />
-        <meta property="og:url" content="https://andremedina.com.br/sobre" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/sobre" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -56,7 +56,7 @@ const Sobre = () => {
         <meta name="medical-education" content="Especialização em Cirurgia Oncológica, Mestrado em Oncologia" />
         <meta name="professional-memberships" content="Grupo Brasileiro de Melanoma, Sociedade Brasileira de Cirurgia Oncológica" />
         
-        <link rel="canonical" href="https://andremedina.com.br/sobre" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/sobre" />
       </Helmet>
       
       <StructuredData type="person" />

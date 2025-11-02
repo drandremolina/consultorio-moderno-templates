@@ -21,7 +21,7 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Dr. André Molina - Tratamento Melanoma e Carcinoma Basocelular SP" />
         <meta property="og:description" content="Especialista em melanoma, carcinoma basocelular, biópsia de linfonodo sentinela, perfusão isolada de membro e cirurgia de Mohs. Oncologia cutânea em São Paulo." />
-        <meta property="og:url" content="https://andremedina.com.br/" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/" />
         <meta property="og:site_name" content="Dr. André Molina - Cirurgião Oncológico" />
         <meta property="og:locale" content="pt_BR" />
         
@@ -36,7 +36,7 @@ const Index = () => {
         <meta name="specialty" content="Oncologia Cutânea" />
         <meta name="location" content="São Paulo, SP, Brasil" />
         
-        <link rel="canonical" href="https://andremedina.com.br/" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </Helmet>
       

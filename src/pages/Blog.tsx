@@ -19,7 +19,7 @@ const Blog = () => {
         <meta property="og:type" content="blog" />
         <meta property="og:title" content="Blog - Dr. André Molina | Oncologia Cutânea" />
         <meta property="og:description" content="Artigos e informações especializadas sobre câncer de pele, melanoma e oncologia cutânea." />
-        <meta property="og:url" content="https://andremedina.com.br/blog" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/blog" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -30,13 +30,13 @@ const Blog = () => {
         <meta name="content-type" content="educational-medical-blog" />
         <meta name="article-topics" content="Melanoma, Carcinoma Basocelular, Prevenção, Tratamentos, Oncologia Cutânea" />
         
-        <link rel="canonical" href="https://andremedina.com.br/blog" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/blog" />
       </Helmet>
       
       <StructuredData type="article" data={{
         title: "Blog - Oncologia Cutânea",
         description: "Artigos educativos sobre câncer de pele e oncologia cutânea",
-        url: "https://andremedina.com.br/blog"
+        url: "https://drandremolina.lovable.app/blog"
       }} />
       <AIOptimization page="blog" />
 

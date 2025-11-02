@@ -18,7 +18,7 @@ const Contato = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contato - Dr. André Molina | Agende sua Consulta" />
         <meta property="og:description" content="Agende sua consulta especializada em oncologia cutânea com Dr. André Molina em São Paulo." />
-        <meta property="og:url" content="https://andremedina.com.br/contato" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/contato" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -30,7 +30,7 @@ const Contato = () => {
         <meta name="contact-whatsapp" content="+55-11-97164-4726" />
         <meta name="appointment-booking" content="available" />
         
-        <link rel="canonical" href="https://andremedina.com.br/contato" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/contato" />
       </Helmet>
       
       <StructuredData type="medicalOrganization" />

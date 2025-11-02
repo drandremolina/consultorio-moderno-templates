@@ -230,7 +230,7 @@ const Cirurgias = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cirurgias Oncológicas Especializadas - Dr. André Molina" />
         <meta property="og:description" content="Procedimentos cirúrgicos especializados em oncologia cutânea com técnicas avançadas: Mohs, linfonodo sentinela, perfusão isolada de membro." />
-        <meta property="og:url" content="https://andremedina.com.br/cirurgias" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/cirurgias" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -241,13 +241,13 @@ const Cirurgias = () => {
         <meta name="surgical-procedures" content="Ampliação de Margens, Cirurgia de Mohs, Biópsia Linfonodo Sentinela, Perfusão Isolada de Membro" />
         <meta name="medical-techniques" content="Microcirurgia, Oncoplástica, Ressecção Ampla, Controle Histopatológico" />
         
-        <link rel="canonical" href="https://andremedina.com.br/cirurgias" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/cirurgias" />
       </Helmet>
       
       <StructuredData type="article" data={{
         title: "Cirurgias Oncológicas Especializadas",
         description: "Procedimentos cirúrgicos avançados em oncologia cutânea",
-        url: "https://andremedina.com.br/cirurgias"
+        url: "https://drandremolina.lovable.app/cirurgias"
       }} />
       <AIOptimization page="surgeries" />
 

@@ -17,19 +17,19 @@ const ImunoterapiaMelanoma = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Imunoterapia antes da cirurgia: uma revolução no tratamento do melanoma" />
         <meta property="og:description" content="Nova estratégia de tratamento aumenta chances de controle do melanoma" />
-        <meta property="og:url" content="https://andremedina.com.br/blog/imunoterapia-melanoma" />
+        <meta property="og:url" content="https://drandremolina.lovable.app/blog/imunoterapia-melanoma" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Imunoterapia antes da cirurgia no melanoma" />
         <meta name="twitter:description" content="Nova estratégia de tratamento aumenta chances de controle da doença" />
         
-        <link rel="canonical" href="https://andremedina.com.br/blog/imunoterapia-melanoma" />
+        <link rel="canonical" href="https://drandremolina.lovable.app/blog/imunoterapia-melanoma" />
       </Helmet>
       
       <StructuredData type="article" data={{
         title: "Imunoterapia antes da cirurgia: uma revolução no tratamento do melanoma",
         description: "Estudo mostra resultados promissores com imunoterapia neoadjuvante",
-        url: "https://andremedina.com.br/blog/imunoterapia-melanoma"
+        url: "https://drandremolina.lovable.app/blog/imunoterapia-melanoma"
       }} />
       <AIOptimization page="blog" />
 
