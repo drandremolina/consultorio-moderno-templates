@@ -17,6 +17,7 @@ import {
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
 import { Helmet } from "react-helmet";
+import drMolinaPhoto from "@/assets/dr-andre-molina-photo.jpg";
 
 const Sobre = () => {
   const formacao = [
@@ -149,21 +150,17 @@ const Sobre = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <Card className="overflow-hidden border-0 shadow-lg">
-                    <CardContent className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
-                      <div className="aspect-square bg-white rounded-2xl flex items-center justify-center max-w-md mx-auto">
-                        <div className="text-center space-y-4">
-                          <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-white text-2xl font-bold">
-                            AM
-                          </div>
-                          <div className="space-y-2">
-                            <h3 className="text-xl font-bold text-foreground">Dr. André Molina</h3>
-                            <p className="text-muted-foreground">Cirurgião Oncológico</p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div className="flex justify-center">
+                    <div className="relative w-72 h-72">
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl"></div>
+                      <img 
+                        src={drMolinaPhoto}
+                        alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
+                        className="relative w-full h-full rounded-full object-cover object-center shadow-2xl"
+                        style={{ objectPosition: '50% 20%' }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
