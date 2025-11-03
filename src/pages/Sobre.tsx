@@ -71,6 +71,19 @@ const Sobre = () => {
           <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/5">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center space-y-6">
+                {/* Photo */}
+                <div className="flex justify-center mb-8">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
+                    <img 
+                      src={drMolinaPhoto}
+                      alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
+                      className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20"
+                      style={{ objectPosition: '50% 20%' }}
+                    />
+                  </div>
+                </div>
+                
                 <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary">
                   <Stethoscope className="h-4 w-4" />
                   Sobre o Especialista
@@ -145,20 +158,6 @@ const Sobre = () => {
                     <div>
                       <h3 className="font-semibold text-foreground">Especialização</h3>
                       <p className="text-muted-foreground">Cirurgia Oncológica - Oncologia Cutânea</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <div className="flex justify-center">
-                    <div className="relative w-72 h-72">
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl"></div>
-                      <img 
-                        src={drMolinaPhoto}
-                        alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
-                        className="relative w-full h-full rounded-full object-cover object-center shadow-2xl"
-                        style={{ objectPosition: '50% 20%' }}
-                      />
                     </div>
                   </div>
                 </div>
