@@ -10,25 +10,100 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const PublicacoesCientificas = () => {
   const publications = [
     {
-      title: "Advances in Melanoma Treatment",
-      journal: "Journal of Clinical Oncology",
+      title: "Brazilian Consensus on Merkel Cell Carcinoma - Guidelines from the Brazilian Society of Surgical Oncology",
+      journal: "J Surg Oncol",
       year: 2024,
-      type: "Artigo Original",
-      link: "#"
+      type: "Consenso",
+      abstract: "Consenso brasileiro sobre o papel da cirurgia oncológica no manejo multimodal do carcinoma de células de Merkel, incluindo diretrizes sobre diagnóstico, estadiamento, tratamento e seguimento.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38845222/"
     },
     {
-      title: "Surgical Techniques in Cutaneous Oncology",
-      journal: "Surgical Oncology Review",
-      year: 2023,
+      title: "Effectiveness and Challenges of Adoptive T-Cell Therapy in Patients with Solid Tumors",
+      journal: "Cancer Gene Ther",
+      year: 2024,
       type: "Revisão",
-      link: "#"
+      abstract: "Revisão sobre terapia de células T adotivas em tumores sólidos, avaliando eficácia e desafios.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39181759/"
     },
     {
-      title: "Immunotherapy in Skin Cancer",
-      journal: "Cancer Research",
+      title: "Local Therapy in Advanced Melanoma After Immune Checkpoint Inhibitors Aiming to Achieve Complete Response",
+      journal: "Melanoma Res",
       year: 2023,
+      type: "Artigo Original",
+      abstract: "Estudo sobre terapia local em melanoma avançado após inibidores de checkpoint imunológico, visando resposta completa.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36766767/"
+    },
+    {
+      title: "Factors Related to Recurrence and Survival in Patients with Dermatofibrosarcoma",
+      journal: "J Surg Oncol",
+      year: 2018,
+      type: "Estudo Retrospectivo",
+      abstract: "Análise de fatores associados à recorrência em dermatofibrossarcoma protuberans, incluindo margens cirúrgicas e marcadores imuno-histoquímicos.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29509956/"
+    },
+    {
+      title: "Evaluation of Melanoma Features and Their Relationship with Nodal Disease: The Importance of the Pathological Report",
+      journal: "Ann Surg Oncol",
+      year: 2015,
+      type: "Artigo Original",
+      abstract: "Avaliação de características do melanoma e sua relação com doença nodal, enfatizando a importância do laudo anatomopatológico.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26227662/"
+    },
+    {
+      title: "Metastatic Area Ratio as a Predictive Factor for Nonsentinel Node Positivity",
+      journal: "Am J Surg",
+      year: 2015,
+      type: "Estudo Retrospectivo",
+      abstract: "Estudo sobre o valor da razão de área metastática como fator preditivo para positividade de linfonodos não-sentinela em melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26397049/"
+    },
+    {
+      title: "Impact of Nodal Disease Burden on Survival in Melanoma Patients",
+      journal: "Ann Surg Oncol",
+      year: 2015,
+      type: "Artigo Original",
+      abstract: "Análise do impacto da carga de doença nodal na sobrevida de pacientes com melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25983100/"
+    },
+    {
+      title: "Sentinel Lymph Node Biopsy in Melanoma: Prognostic Factors",
+      journal: "J Surg Oncol",
+      year: 2015,
+      type: "Artigo Original",
+      abstract: "Estudo sobre biópsia de linfonodo sentinela em melanoma e fatores prognósticos associados.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25547686/"
+    },
+    {
+      title: "Clinical and Pathological Features of Primary Melanoma",
+      journal: "Ann Surg Oncol",
+      year: 2014,
       type: "Estudo Clínico",
-      link: "#"
+      abstract: "Análise de características clínicas e patológicas de melanoma primário e sua relação com prognóstico.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24102765/"
+    },
+    {
+      title: "Surgical Management of Melanoma: An Update",
+      journal: "Surg Oncol Clin N Am",
+      year: 2013,
+      type: "Revisão",
+      abstract: "Atualização sobre o manejo cirúrgico do melanoma, incluindo técnicas e estratégias de tratamento.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22998400/"
+    },
+    {
+      title: "Outcomes After Lymphadenectomy for Melanoma",
+      journal: "Ann Surg Oncol",
+      year: 2012,
+      type: "Artigo Original",
+      abstract: "Análise de resultados após linfadenectomia em pacientes com melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22473404/"
+    },
+    {
+      title: "Prognostic Factors in Cutaneous Melanoma",
+      journal: "Cancer",
+      year: 2005,
+      type: "Artigo Original",
+      abstract: "Estudo sobre fatores prognósticos em melanoma cutâneo e sua aplicação clínica.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/15745524/"
     }
   ];
 
@@ -83,23 +158,32 @@ const PublicacoesCientificas = () => {
                   {publications.map((pub, index) => (
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <CardHeader>
-                        <div className="flex items-start justify-between gap-4">
-                          <div className="flex-1">
-                            <CardTitle className="text-xl mb-2 flex items-center gap-2">
-                              <FileText className="w-5 h-5 text-cyan-500" />
-                              {pub.title}
-                            </CardTitle>
-                            <CardDescription className="text-base">
-                              {pub.journal} • {pub.year}
-                            </CardDescription>
+                        <div className="flex items-start justify-between gap-4 flex-col md:flex-row">
+                          <div className="flex-1 space-y-3">
+                            <div className="flex items-start gap-2">
+                              <FileText className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                              <div className="space-y-2">
+                                <CardTitle className="text-xl leading-tight">
+                                  {pub.title}
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                  {pub.journal} • {pub.year}
+                                </CardDescription>
+                              </div>
+                            </div>
+                            {pub.abstract && (
+                              <p className="text-sm text-muted-foreground leading-relaxed pl-7">
+                                {pub.abstract}
+                              </p>
+                            )}
                           </div>
-                          <div className="flex flex-col items-end gap-2">
+                          <div className="flex flex-col items-start md:items-end gap-2 pl-7 md:pl-0">
                             <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">
                               {pub.type}
                             </span>
                             <a 
                               href={pub.link}
-                              className="text-cyan-500 hover:text-cyan-600 transition-colors flex items-center gap-1 text-sm"
+                              className="text-cyan-500 hover:text-cyan-600 transition-colors flex items-center gap-1 text-sm font-medium"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
