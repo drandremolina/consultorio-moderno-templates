@@ -8,6 +8,7 @@ import {
   CheckCircle,
   ArrowRight
 } from "lucide-react";
+import drMolinaPhoto from "@/assets/dr-andre-molina-photo.jpg";
 
 const About = () => {
   const achievements = [
@@ -31,6 +32,19 @@ const About = () => {
           <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary mb-4">
             <Award className="h-4 w-4" />
             Sobre o Médico
+          </div>
+          
+          {/* Photo */}
+          <div className="flex justify-center mb-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
+              <img 
+                src={drMolinaPhoto}
+                alt="Dr. André Molina"
+                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20"
+                style={{ objectPosition: '50% 20%' }}
+              />
+            </div>
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
