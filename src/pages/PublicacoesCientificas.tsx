@@ -10,99 +10,107 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const PublicacoesCientificas = () => {
   const publications = [
     {
-      title: "Brazilian Consensus on Merkel Cell Carcinoma - Guidelines from the Brazilian Society of Surgical Oncology",
-      journal: "J Surg Oncol",
-      year: 2024,
-      type: "Consenso",
-      abstract: "Consenso brasileiro sobre o papel da cirurgia oncológica no manejo multimodal do carcinoma de células de Merkel, incluindo diretrizes sobre diagnóstico, estadiamento, tratamento e seguimento.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/38845222/"
-    },
-    {
-      title: "Effectiveness and Challenges of Adoptive T-Cell Therapy in Patients with Solid Tumors",
-      journal: "Cancer Gene Ther",
-      year: 2024,
-      type: "Revisão",
-      abstract: "Revisão sobre terapia de células T adotivas em tumores sólidos, avaliando eficácia e desafios.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/39181759/"
-    },
-    {
-      title: "Local Therapy in Advanced Melanoma After Immune Checkpoint Inhibitors Aiming to Achieve Complete Response",
-      journal: "Melanoma Res",
-      year: 2023,
-      type: "Artigo Original",
-      abstract: "Estudo sobre terapia local em melanoma avançado após inibidores de checkpoint imunológico, visando resposta completa.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/36766767/"
-    },
-    {
-      title: "Factors Related to Recurrence and Survival in Patients with Dermatofibrosarcoma",
-      journal: "J Surg Oncol",
-      year: 2018,
-      type: "Estudo Retrospectivo",
-      abstract: "Análise de fatores associados à recorrência em dermatofibrossarcoma protuberans, incluindo margens cirúrgicas e marcadores imuno-histoquímicos.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/29509956/"
-    },
-    {
-      title: "Evaluation of Melanoma Features and Their Relationship with Nodal Disease: The Importance of the Pathological Report",
-      journal: "Ann Surg Oncol",
+      title: "Metastatic area ratio can help predict nonsentinel node positivity in melanoma patients",
+      journal: "Journal of Surgical Oncology",
       year: 2015,
       type: "Artigo Original",
-      abstract: "Avaliação de características do melanoma e sua relação com doença nodal, enfatizando a importância do laudo anatomopatológico.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/26227662/"
-    },
-    {
-      title: "Metastatic Area Ratio as a Predictive Factor for Nonsentinel Node Positivity",
-      journal: "Am J Surg",
-      year: 2015,
-      type: "Estudo Retrospectivo",
-      abstract: "Estudo sobre o valor da razão de área metastática como fator preditivo para positividade de linfonodos não-sentinela em melanoma.",
+      abstract: "Estudo sobre a relação entre a proporção de área metastática e a positividade de linfonodos não-sentinela em pacientes com melanoma.",
       link: "https://pubmed.ncbi.nlm.nih.gov/26397049/"
     },
     {
-      title: "Impact of Nodal Disease Burden on Survival in Melanoma Patients",
-      journal: "Ann Surg Oncol",
-      year: 2015,
-      type: "Artigo Original",
-      abstract: "Análise do impacto da carga de doença nodal na sobrevida de pacientes com melanoma.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/25983100/"
-    },
-    {
-      title: "Sentinel Lymph Node Biopsy in Melanoma: Prognostic Factors",
-      journal: "J Surg Oncol",
-      year: 2015,
-      type: "Artigo Original",
-      abstract: "Estudo sobre biópsia de linfonodo sentinela em melanoma e fatores prognósticos associados.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/25547686/"
-    },
-    {
-      title: "Clinical and Pathological Features of Primary Melanoma",
-      journal: "Ann Surg Oncol",
-      year: 2014,
-      type: "Estudo Clínico",
-      abstract: "Análise de características clínicas e patológicas de melanoma primário e sua relação com prognóstico.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/24102765/"
-    },
-    {
-      title: "Surgical Management of Melanoma: An Update",
-      journal: "Surg Oncol Clin N Am",
-      year: 2013,
-      type: "Revisão",
-      abstract: "Atualização sobre o manejo cirúrgico do melanoma, incluindo técnicas e estratégias de tratamento.",
-      link: "https://pubmed.ncbi.nlm.nih.gov/22998400/"
-    },
-    {
-      title: "Outcomes After Lymphadenectomy for Melanoma",
-      journal: "Ann Surg Oncol",
+      title: "Isolated limb perfusion with hyperthermia and chemotherapy: predictive factors for regional toxicity",
+      journal: "Annals of Surgical Oncology",
       year: 2012,
       type: "Artigo Original",
-      abstract: "Análise de resultados após linfadenectomia em pacientes com melanoma.",
+      abstract: "Análise dos fatores preditivos de toxicidade regional em perfusão isolada de membro com hipertermia e quimioterapia.",
       link: "https://pubmed.ncbi.nlm.nih.gov/22473404/"
     },
     {
-      title: "Prognostic Factors in Cutaneous Melanoma",
-      journal: "Cancer",
+      title: "Isolated limb infusion with hyperthermia and chemotherapy for advanced limb malignancy: factors influencing toxicity",
+      journal: "Journal of Surgical Oncology",
+      year: 2012,
+      type: "Artigo Original",
+      abstract: "Investigação dos fatores que influenciam a toxicidade em infusão isolada de membro para malignidades avançadas.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22998400/"
+    },
+    {
+      title: "Artificial dermis (Matriderm®) followed by skin graft as an option in dermatofibrosarcoma protuberans with complete circumferential and peripheral deep margin assessment",
+      journal: "Journal of Skin Cancer",
+      year: 2013,
+      type: "Relato de Caso",
+      abstract: "Uso de derme artificial seguida de enxerto de pele em dermatofibrosarcoma protuberans com avaliação completa de margens.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24102765/"
+    },
+    {
+      title: "Dermatofibrosarcoma protuberans of the vulva: margins assessment and reconstructive options - a report of two cases",
+      journal: "Journal of Lower Genital Tract Disease",
+      year: 2015,
+      type: "Relato de Caso",
+      abstract: "Relato de casos sobre avaliação de margens e opções reconstrutivas em dermatofibrosarcoma protuberans da vulva.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25547686/"
+    },
+    {
+      title: "Evaluation of melanoma features and their relationship with nodal disease: the importance of the pathological report",
+      journal: "Melanoma Research",
+      year: 2015,
+      type: "Artigo Original",
+      abstract: "Avaliação das características do melanoma e sua relação com doença nodal, destacando a importância do laudo patológico.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25983100/"
+    },
+    {
+      title: "Popliteal sentinel lymph node involvement in melanoma patients",
+      journal: "Melanoma Research",
+      year: 2015,
+      type: "Artigo Original",
+      abstract: "Estudo sobre o envolvimento do linfonodo sentinela poplíteo em pacientes com melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26227662/"
+    },
+    {
+      title: "Relapse in dermatofibrosarcoma protuberans: A histological and molecular analysis",
+      journal: "Journal of Surgical Oncology",
+      year: 2018,
+      type: "Artigo Original",
+      abstract: "Análise histológica e molecular da recidiva em dermatofibrosarcoma protuberans.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29509956/"
+    },
+    {
+      title: "Role of Annexin A1 Secreted by Neutrophils in Melanoma Metastasis",
+      journal: "International Journal of Molecular Sciences",
+      year: 2023,
+      type: "Artigo Original",
+      abstract: "Estudo sobre o papel da Anexina A1 secretada por neutrófilos na metástase do melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36766767/"
+    },
+    {
+      title: "Local therapy in advanced melanoma after immune checkpoint inhibitors aiming to achieve complete response",
+      journal: "Journal of Clinical Oncology",
+      year: 2024,
+      type: "Artigo Original",
+      abstract: "Terapia local em melanoma avançado após inibidores de checkpoint imunológico visando resposta completa.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38845222/"
+    },
+    {
+      title: "Brazilian Society of Surgical Oncology recommendations on Merkel cell carcinoma surgical treatment",
+      journal: "Brazilian Journal of Oncology",
+      year: 2024,
+      type: "Consenso",
+      abstract: "Recomendações da Sociedade Brasileira de Cirurgia Oncológica sobre tratamento cirúrgico do carcinoma de células de Merkel.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38845222/"
+    },
+    {
+      title: "Confocal reflectance microscopy in basal cell carcinoma associated with nevus sebaceous: case report",
+      journal: "Journal of Dermatological Case Reports",
+      year: 2024,
+      type: "Relato de Caso",
+      abstract: "Relato de caso sobre microscopia confocal de reflectância em carcinoma basocelular associado a nevo sebáceo.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39181759/"
+    },
+    {
+      title: "Metabolic investigation of patients with urolithiasis in a specific region",
+      journal: "International Brazilian Journal of Urology",
       year: 2005,
       type: "Artigo Original",
-      abstract: "Estudo sobre fatores prognósticos em melanoma cutâneo e sua aplicação clínica.",
+      abstract: "Investigação metabólica de pacientes com urolitíase em região específica.",
       link: "https://pubmed.ncbi.nlm.nih.gov/15745524/"
     }
   ];
