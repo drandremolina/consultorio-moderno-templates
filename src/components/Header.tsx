@@ -1,9 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const scrollToContact = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const isOnHomePage = window.location.pathname === '/';
+    
+    if (isOnHomePage) {
+      const contactSection = document.getElementById('contato');
+      contactSection?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/#contato');
+      setTimeout(() => {
+        const contactSection = document.getElementById('contato');
+        contactSection?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="w-full bg-white/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
@@ -63,22 +82,22 @@ const Header = () => {
         {/* Desktop Navigation - Below main header */}
         <div className="hidden md:block border-t border-border/30">
           <nav className="flex items-center space-x-8 py-3">
-            <a href="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            <Link to="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Início
-            </a>
-            <a href="/sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link to="/sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Sobre
-            </a>
-            <a href="/cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link to="/cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Cirurgias
-            </a>
-            <a href="/oncologia-cutanea" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link to="/oncologia-cutanea" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Oncologia Cutânea
-            </a>
-            <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <Link to="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Blog
-            </a>
-            <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+            </Link>
+            <a href="/#contato" onClick={scrollToContact} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Contato
             </a>
           </nav>
@@ -88,22 +107,22 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border/30">
             <nav className="flex flex-col space-y-4">
-              <a href="/" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Início
-              </a>
-              <a href="/sobre" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              </Link>
+              <Link to="/sobre" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Sobre
-              </a>
-              <a href="/cirurgias" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              </Link>
+              <Link to="/cirurgias" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Cirurgias
-              </a>
-              <a href="/oncologia-cutanea" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              </Link>
+              <Link to="/oncologia-cutanea" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Oncologia Cutânea
-              </a>
-              <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              </Link>
+              <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
-              </a>
-              <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
+              </Link>
+              <a href="/#contato" onClick={scrollToContact} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Contato
               </a>
               <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
