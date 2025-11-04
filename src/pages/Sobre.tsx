@@ -12,7 +12,9 @@ import {
   ArrowRight,
   MapPin,
   Calendar,
-  Stethoscope
+  Stethoscope,
+  FileText,
+  ExternalLink
 } from "lucide-react";
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
@@ -32,6 +34,105 @@ const Sobre = () => {
   const membros = [
     "Grupo Brasileiro de Melanoma",
     "Sociedade Brasileira de Cirurgia Oncológica"
+  ];
+
+  const publications = [
+    {
+      title: "Metastatic area ratio can help predict nonsentinel node positivity in melanoma patients",
+      journal: "Melanoma Res (2016)",
+      year: 2016,
+      type: "Melanoma",
+      abstract: "Estudo sobre a relação entre a área metastática e a positividade de linfonodos não-sentinela em pacientes com melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26397049/"
+    },
+    {
+      title: "Isolated limb perfusion with hyperthermia and chemotherapy: predictive factors for regional toxicity",
+      journal: "Clinics (Sao Paulo) (2012)",
+      year: 2012,
+      type: "Perfusão Isolada de Membro",
+      abstract: "Análise dos fatores preditivos para toxicidade regional em perfusão isolada de membro com hipertermia e quimioterapia.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22473404/"
+    },
+    {
+      title: "Isolated limb infusion with hyperthermia and chemotherapy for advanced limb malignancy: factors influencing toxicity",
+      journal: "ANZ J Surg (2014)",
+      year: 2014,
+      type: "Perfusão Isolada de Membro",
+      abstract: "Estudo sobre fatores que influenciam a toxicidade em infusão isolada de membro para malignidades avançadas.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/22998400/"
+    },
+    {
+      title: "Artificial dermis (Matriderm®) followed by skin graft as an option in dermatofibrosarcoma protuberans with complete circumferential and peripheral deep margin assessment",
+      journal: "Int Wound J (2015)",
+      year: 2015,
+      type: "Dermatofibrossarcoma",
+      abstract: "Uso de derme artificial seguida de enxerto de pele no tratamento de dermatofibrossarcoma protuberans.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/24102765/"
+    },
+    {
+      title: "Dermatofibrosarcoma protuberans of the vulva: margins assessment and reconstructive options - a report of two cases",
+      journal: "World J Surg Oncol (2014)",
+      year: 2014,
+      type: "Dermatofibrossarcoma",
+      abstract: "Relato de dois casos de dermatofibrossarcoma protuberans da vulva com avaliação de margens e opções reconstrutivas.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25547686/"
+    },
+    {
+      title: "Evaluation of melanoma features and their relationship with nodal disease: the importance of the pathological report",
+      journal: "Tumori (2015)",
+      year: 2015,
+      type: "Melanoma",
+      abstract: "Avaliação das características do melanoma e sua relação com doença nodal: a importância do relatório patológico.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/25983100/"
+    },
+    {
+      title: "Popliteal sentinel lymph node involvement in melanoma patients",
+      journal: "Clinical Study (2015)",
+      year: 2015,
+      type: "Linfonodo Sentinela",
+      abstract: "Estudo sobre o envolvimento do linfonodo sentinela poplíteo em pacientes com melanoma.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/26227662/"
+    },
+    {
+      title: "Relapse in dermatofibrosarcoma protuberans: A histological and molecular analysis",
+      journal: "Research Article (2018)",
+      year: 2018,
+      type: "Dermatofibrossarcoma",
+      abstract: "Análise histológica e molecular da recidiva em dermatofibrossarcoma protuberans.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/29509956/"
+    },
+    {
+      title: "Local therapy in advanced melanoma after immune checkpoint inhibitors aiming to achieve complete response",
+      journal: "Clinical Study (2024)",
+      year: 2024,
+      type: "Melanoma",
+      abstract: "Terapia local em melanoma avançado após inibidores de checkpoint imunológico visando resposta completa.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/38845222/"
+    },
+    {
+      title: "Brazilian Society of Surgical Oncology recommendations on Merkel cell carcinoma surgical treatment",
+      journal: "Guidelines (2024)",
+      year: 2024,
+      type: "Carcinoma de Merkel",
+      abstract: "Recomendações da Sociedade Brasileira de Oncologia Cirúrgica sobre o tratamento cirúrgico do carcinoma de células de Merkel.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/39181759/"
+    },
+    {
+      title: "Confocal reflectance microscopy in basal cell carcinoma associated with nevus sebaceous: case report",
+      journal: "Case Report (2005)",
+      year: 2005,
+      type: "Carcinoma Basocelular",
+      abstract: "Microscopia confocal de reflectância em carcinoma basocelular associado a nevo sebáceo: relato de caso.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/15745524/"
+    },
+    {
+      title: "Metabolic investigation of patients with urolithiasis in a specific region",
+      journal: "Research Article (2023)",
+      year: 2023,
+      type: "Urologia",
+      abstract: "Investigação metabólica de pacientes com urolitíase em uma região específica.",
+      link: "https://pubmed.ncbi.nlm.nih.gov/36766767/"
+    }
   ];
 
   return (
@@ -228,6 +329,80 @@ const Sobre = () => {
                       </div>
                     </CardContent>
                   </Card>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Publicações Científicas */}
+          <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+            <div className="container mx-auto px-4">
+              <div className="max-w-5xl mx-auto">
+                <div className="text-center space-y-4 mb-12">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-500 text-white mb-6">
+                    <BookOpen className="w-8 h-8" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                    Publicações Científicas
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Contribuições acadêmicas e científicas para o avanço da cirurgia oncológica e oncologia cutânea
+                  </p>
+                </div>
+
+                <div className="grid gap-6">
+                  {publications.map((pub, index) => (
+                    <Card key={index} className="hover:shadow-lg transition-shadow">
+                      <CardContent className="p-6">
+                        <div className="flex items-start justify-between gap-4 flex-col md:flex-row">
+                          <div className="flex-1 space-y-3">
+                            <div className="flex items-start gap-2">
+                              <FileText className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                              <div className="space-y-2">
+                                <h3 className="text-xl font-semibold leading-tight">
+                                  {pub.title}
+                                </h3>
+                                <p className="text-base text-muted-foreground">
+                                  {pub.journal} • {pub.year}
+                                </p>
+                              </div>
+                            </div>
+                            {pub.abstract && (
+                              <p className="text-sm text-muted-foreground leading-relaxed pl-7">
+                                {pub.abstract}
+                              </p>
+                            )}
+                          </div>
+                          <div className="flex flex-col items-start md:items-end gap-2 pl-7 md:pl-0">
+                            <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">
+                              {pub.type}
+                            </span>
+                            <a 
+                              href={pub.link}
+                              className="text-cyan-500 hover:text-cyan-600 transition-colors flex items-center gap-1 text-sm font-medium"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Ver publicação
+                              <ExternalLink className="w-4 h-4" />
+                            </a>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                {/* Info Box */}
+                <div className="mt-12 p-6 bg-cyan-50 dark:bg-cyan-950/20 rounded-lg border border-cyan-200 dark:border-cyan-900">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Compromisso com a Ciência
+                  </h3>
+                  <p className="text-muted-foreground">
+                    O Dr. André Molina mantém ativo envolvimento em pesquisas científicas e publicações acadêmicas, 
+                    contribuindo para o avanço do conhecimento em cirurgia oncológica e oncologia cutânea. 
+                    Seu trabalho visa melhorar continuamente os tratamentos e resultados para pacientes oncológicos.
+                  </p>
                 </div>
               </div>
             </div>

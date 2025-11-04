@@ -78,9 +78,6 @@ const Header = () => {
             <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Blog
             </a>
-            <a href="/publicacoes-cientificas" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
-              Publicações Científicas
-            </a>
             <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Contato
             </a>
@@ -105,9 +102,6 @@ const Header = () => {
               </a>
               <a href="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
-              </a>
-              <a href="/publicacoes-cientificas" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
-                Publicações Científicas
               </a>
               <a href="/contato" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Contato
