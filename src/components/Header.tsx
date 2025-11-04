@@ -1,28 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const scrollToContact = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const isOnHomePage = window.location.pathname === '/';
-    
-    if (isOnHomePage) {
-      const contactSection = document.getElementById('contato');
-      contactSection?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/#contato');
-      setTimeout(() => {
-        const contactSection = document.getElementById('contato');
-        contactSection?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
     <header className="w-full bg-white/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
@@ -97,9 +79,6 @@ const Header = () => {
             <Link to="/blog" className="text-foreground hover:text-cyan-500 transition-colors font-medium">
               Blog
             </Link>
-            <a href="/#contato" onClick={scrollToContact} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
-              Contato
-            </a>
           </nav>
         </div>
 
@@ -122,9 +101,6 @@ const Header = () => {
               <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
               </Link>
-              <a href="/#contato" onClick={scrollToContact} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
-                Contato
-              </a>
               <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 w-fit">
                   Agendar Consulta
