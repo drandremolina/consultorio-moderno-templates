@@ -8,7 +8,7 @@ import {
   CheckCircle,
   ArrowRight
 } from "lucide-react";
-import drMolinaPhoto from "@/assets/dr-andre-molina-professional.jpg";
+import drMolinaPhoto from "@/assets/dr-andre-molina-photo.jpg";
 
 const About = () => {
   const achievements = [
