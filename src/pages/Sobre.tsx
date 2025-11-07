@@ -180,7 +180,7 @@ const Sobre = () => {
                       src={drMolinaPhoto}
                       alt="Dr. André Molina - Cirurgião Oncológico especialista em Oncologia Cutânea"
                       className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20"
-                      style={{ objectPosition: '50% 20%' }}
+                      style={{ objectPosition: '50% 35%' }}
                     />
                   </div>
                 </div>
