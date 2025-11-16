@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Sobre from "./pages/Sobre";
 import Cirurgias from "./pages/Cirurgias";
 import OncologiaCutanea from "./pages/OncologiaCutanea";
+import TratamentoMelanoma from "./pages/TratamentoMelanoma";
 import Blog from "./pages/Blog";
 import ImunoterapiaMelanoma from "./pages/blog/ImunoterapiaMelanoma";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/cirurgias" element={<Cirurgias />} />
           <Route path="/oncologia-cutanea" element={<OncologiaCutanea />} />
+          <Route path="/tratamento-melanoma" element={<TratamentoMelanoma />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/imunoterapia-melanoma" element={<ImunoterapiaMelanoma />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
