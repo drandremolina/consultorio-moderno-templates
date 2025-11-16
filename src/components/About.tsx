@@ -43,6 +43,9 @@ const About = () => {
                 alt="Dr. André Molina"
                 className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl ring-4 ring-primary/20"
                 style={{ objectPosition: 'center' }}
+                loading="lazy"
+                width="192"
+                height="192"
               />
             </div>
           </div>
