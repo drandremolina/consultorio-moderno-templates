@@ -7,20 +7,12 @@ import { Phone } from "lucide-react";
 import { Helmet } from "react-helmet";
 import StructuredData from "@/components/SEO/StructuredData";
 import AIOptimization from "@/components/SEO/AIOptimization";
-
 const TratamentoMelanoma = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Tratamento do Melanoma | Dr. André Molina - Cirurgião Oncológico</title>
-        <meta 
-          name="description" 
-          content="Tratamento completo do melanoma: cirurgia oncológica, imunoterapia e terapia-alvo. Saiba mais sobre estadiamento, fatores de risco e as abordagens terapêuticas mais modernas." 
-        />
-        <meta 
-          name="keywords" 
-          content="tratamento melanoma, imunoterapia melanoma, terapia-alvo BRAF, cirurgia oncológica, estadiamento melanoma, pembrolizumabe, nivolumabe" 
-        />
+        <meta name="description" content="Tratamento completo do melanoma: cirurgia oncológica, imunoterapia e terapia-alvo. Saiba mais sobre estadiamento, fatores de risco e as abordagens terapêuticas mais modernas." />
+        <meta name="keywords" content="tratamento melanoma, imunoterapia melanoma, terapia-alvo BRAF, cirurgia oncológica, estadiamento melanoma, pembrolizumabe, nivolumabe" />
         <link rel="canonical" href="https://www.drandremolina.com.br/tratamento-melanoma" />
         <meta property="og:title" content="Tratamento do Melanoma | Dr. André Molina" />
         <meta property="og:description" content="Abordagens modernas no tratamento do melanoma: cirurgia, imunoterapia e terapia-alvo com Dr. André Molina, especialista em oncologia cutânea." />
@@ -28,18 +20,12 @@ const TratamentoMelanoma = () => {
         <meta property="og:url" content="https://www.drandremolina.com.br/tratamento-melanoma" />
       </Helmet>
 
-      <StructuredData 
-        type="article"
-        data={{
-          headline: "Tratamento do Melanoma",
-          datePublished: new Date().toISOString(),
-          author: "Dr. André Molina"
-        }}
-      />
-      <AIOptimization 
-        page="oncology"
-        customTerms={["melanoma", "imunoterapia", "terapia-alvo", "estadiamento", "BRAF", "pembrolizumabe", "nivolumabe", "tratamento melanoma"]}
-      />
+      <StructuredData type="article" data={{
+      headline: "Tratamento do Melanoma",
+      datePublished: new Date().toISOString(),
+      author: "Dr. André Molina"
+    }} />
+      <AIOptimization page="oncology" customTerms={["melanoma", "imunoterapia", "terapia-alvo", "estadiamento", "BRAF", "pembrolizumabe", "nivolumabe", "tratamento melanoma"]} />
 
       <Header />
       <WhatsAppButton />
@@ -213,7 +199,7 @@ const TratamentoMelanoma = () => {
                   </p>
                   <ul className="list-disc list-inside space-y-3 text-lg text-foreground ml-4 mb-6">
                     <li><strong>Excisão Ampla:</strong> É o procedimento padrão para o tumor primário. Consiste na remoção do tumor com uma margem de segurança de pele saudável ao redor. A largura dessa margem é determinada pela espessura de Breslow do tumor.</li>
-                    <li><strong>Biópsia do Linfonodo Sentinela (BLS):</strong> É um procedimento diagnóstico e prognóstico que pode ser recomendado para melanomas em Estágios I e II com risco de disseminação. Se a BLS for positiva (células cancerosas encontradas), indica-se a Dissecção Linfonodal.</li>
+                    <li><strong>Biópsia do Linfonodo Sentinela (BLS):</strong>Biópsia do Linfonodo Sentinela (BLS): É um procedimento diagnóstico e prognóstico que pode ser recomendado para melanomas em Estágios I e II com risco de disseminação. Se a BLS for positiva (células cancerosas encontradas), o paciente passa a ser considerado estágio clínico lll, novas perspectivas de tratamentos podem ser utilizadas..</li>
                     <li><strong>Dissecção Linfonodal:</strong> Remoção de todos os gânglios linfáticos de uma região específica, realizada quando há evidência de envolvimento linfonodal, sendo o tratamento padrão para a componente loco regional do Estágio III.</li>
                     <li><strong>Metastasectomia:</strong> Em casos selecionados de Estágio IV, a remoção cirúrgica de metástases isoladas pode ser considerada para alívio de sintomas ou controle da doença.</li>
                   </ul>
@@ -256,12 +242,7 @@ const TratamentoMelanoma = () => {
               <p className="text-xl mb-8 text-white/90">
                 Tratamento especializado e personalizado para melanoma com as abordagens mais modernas
               </p>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="text-lg px-8 py-6"
-                onClick={() => window.location.href = 'tel:+5511999999999'}
-              >
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-6" onClick={() => window.location.href = 'tel:+5511999999999'}>
                 <Phone className="mr-2 h-5 w-5" />
                 Entre em Contato
               </Button>
@@ -271,8 +252,6 @@ const TratamentoMelanoma = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default TratamentoMelanoma;
