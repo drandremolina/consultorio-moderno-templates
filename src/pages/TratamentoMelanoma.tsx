@@ -214,7 +214,7 @@ const TratamentoMelanoma = () => {
                     A imunoterapia utiliza medicamentos para estimular o próprio sistema imunológico do paciente a reconhecer e destruir as células cancerosas.
                   </p>
                   <ul className="list-disc list-inside space-y-3 text-lg text-foreground ml-4 mb-6">
-                    <li><strong>Inibidores de Checkpoint Imunológico:</strong> São a principal classe de medicamentos no tratamento sistêmico do melanoma. Drogas como Pembrolizumabe e Nivolumabe (anti-PD-1) bloqueiam proteínas que o câncer usa para se esconder do sistema imunológico, liberando as células T para atacar o tumor.</li>
+                    <li><strong>Inibidores de Checkpoint Imunológico:</strong>Dissecção Linfonodal: Remoção de todos os gânglios linfáticos de uma região específica, realizada quando há evidência de envolvimento linfonodal, sendo o tratamento padrão para a componente loco regional do Estágio III, porém devido a novos estudos e tecnologias, atualmente, houve uma redução significativa do uso dessas cirurgias radicais.</li>
                     <li><strong>Uso:</strong> Tratamento adjuvante (Estágios IIb, IIc e III) para reduzir o risco de recidiva e tratamento primário para o Estágio IV.</li>
                   </ul>
 
