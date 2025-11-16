@@ -24,7 +24,7 @@ const OncologiaCutanea = () => {
   const [expandedImunotherapy, setExpandedImunotherapy] = useState<number | null>(null);
   const condicoes = [
     {
-      title: "Melanoma",
+      title: "Tratamento do Melanoma",
       incidencia: "Representa 4% dos cânceres de pele, mas é responsável por 80% das mortes",
       fatores: ["Exposição solar excessiva", "Histórico familiar", "Pele clara", "Múltiplas pintas"],
       patogenia: "Origina-se dos melanócitos, células produtoras de melanina. Pode surgir em pele normal ou a partir de nevos pré-existentes.",
@@ -247,6 +247,15 @@ const OncologiaCutanea = () => {
                                 {condicao.tratamento}
                               </p>
                             </div>
+                            {index === 0 && (
+                              <Button 
+                                onClick={() => window.location.href = '/tratamento-melanoma'}
+                                className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 group mt-4"
+                              >
+                                Saiba mais
+                                <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                              </Button>
+                            )}
                           </div>
                         </div>
                       </CardContent>
