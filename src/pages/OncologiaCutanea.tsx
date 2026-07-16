@@ -130,15 +130,15 @@ const OncologiaCutanea = () => {
   return (
     <>
       <Helmet>
-        <title>Oncologia Cutânea - Dr. André Molina | Tratamento de Melanoma e Carcinomas São Paulo</title>
-        <meta name="description" content="Dr. André Molina, especialista em oncologia cutânea em São Paulo. Informações completas sobre melanoma, carcinoma basocelular, carcinoma espinocelular, carcinoma de células de Merkel, dermatofibrossarcoma e imunoterapia. Tratamento especializado com técnicas avançadas." />
+        <title>Oncologia Cutânea - Dr. André Molina | São Paulo</title>
+        <meta name="description" content="Especialista em oncologia cutânea: melanoma, carcinoma basocelular, espinocelular, carcinoma de Merkel, dermatofibrossarcoma e imunoterapia em São Paulo." />
         <meta name="keywords" content="oncologia cutânea São Paulo, melanoma tratamento SP, carcinoma basocelular São Paulo, carcinoma espinocelular, câncer de pele São Paulo, Dr André Molina oncologia, dermatologia oncológica SP, imunoterapia melanoma, carcinoma células Merkel, dermatofibrossarcoma protuberante" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Oncologia Cutânea - Tratamento Especializado de Câncer de Pele" />
         <meta property="og:description" content="Informações detalhadas sobre melanoma, carcinomas e imunoterapia com Dr. André Molina, especialista em oncologia cutânea em São Paulo." />
-        <meta property="og:url" content="https://drandremolina.lovable.app/oncologia-cutanea" />
+        <meta property="og:url" content="https://www.drandremolina.com/oncologia-cutanea" />
         
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary" />
@@ -150,7 +150,7 @@ const OncologiaCutanea = () => {
         <meta name="treatment-modalities" content="Imunoterapia, Cirurgia Oncológica, Terapia Alvo, Radioterapia Adjuvante" />
         <meta name="medical-information" content="Fatores de risco, patogenia, estadiamento, tratamento" />
         
-        <link rel="canonical" href="https://drandremolina.lovable.app/oncologia-cutanea" />
+        <link rel="canonical" href="https://www.drandremolina.com/oncologia-cutanea" />
       </Helmet>
       
       <StructuredData type="article" data={{

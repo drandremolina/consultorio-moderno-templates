@@ -13,11 +13,11 @@ const TratamentoMelanoma = () => {
         <title>Tratamento do Melanoma | Dr. André Molina - Cirurgião Oncológico</title>
         <meta name="description" content="Tratamento completo do melanoma: cirurgia oncológica, imunoterapia e terapia-alvo. Saiba mais sobre estadiamento, fatores de risco e as abordagens terapêuticas mais modernas." />
         <meta name="keywords" content="tratamento melanoma, imunoterapia melanoma, terapia-alvo BRAF, cirurgia oncológica, estadiamento melanoma, pembrolizumabe, nivolumabe" />
-        <link rel="canonical" href="https://www.drandremolina.com.br/tratamento-melanoma" />
+        <link rel="canonical" href="https://www.drandremolina.com/tratamento-melanoma" />
         <meta property="og:title" content="Tratamento do Melanoma | Dr. André Molina" />
         <meta property="og:description" content="Abordagens modernas no tratamento do melanoma: cirurgia, imunoterapia e terapia-alvo com Dr. André Molina, especialista em oncologia cutânea." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.drandremolina.com.br/tratamento-melanoma" />
+        <meta property="og:url" content="https://www.drandremolina.com/tratamento-melanoma" />
       </Helmet>
 
       <StructuredData type="article" data={{
