@@ -69,9 +69,9 @@ const Hero = () => {
             {/* Card overlay */}
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-border/50">
-                <h3 className="text-base font-semibold text-foreground mb-2 uppercase tracking-wide">
+                <h2 className="text-base font-semibold text-foreground mb-2 uppercase tracking-wide">
                   Oncologia Cutânea
-                </h3>
+                </h2>
                 <p className="text-sm text-muted-foreground mb-4 font-light">
                   Melanoma, Carcinoma Basocelular, Carcinoma de Merkel e Biópsia de Linfonodo Sentinela
                 </p>
