@@ -22,7 +22,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-cyan-500" />
-              <a href="https://www.google.com/maps/search/?api=1\&query=Alameda+Ministro+Rocha+Azevedo,+38+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01410-000" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 transition-colors">Alameda Ministro Rocha Azevedo, 38, sala 1201 - Bela Vista</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Alameda+Ministro+Rocha+Azevedo,+38+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01410-000" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 transition-colors">Alameda Ministro Rocha Azevedo, 38, sala 1201 - Bela Vista</a>
             </div>
           </div>
           <div className="text-cyan-500 font-medium">
