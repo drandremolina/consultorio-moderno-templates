@@ -69,10 +69,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
-                    <a href="https://maps.app.goo.gl/aH8Fc7qk3miLDEro6" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                      <p className="hover:text-primary transition-colors">Rua Adma Jafet, 74, cj 161</p>
+                    <a href="https://www.google.com/maps/search/?api=1\&query=Alameda+Ministro+Rocha+Azevedo,+38+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01410-000" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <p className="hover:text-primary transition-colors">Alameda Ministro Rocha Azevedo, 38, sala 1201</p>
                       <p className="hover:text-primary transition-colors">Bela Vista, São Paulo - SP</p>
-                      <p className="hover:text-primary transition-colors">CEP: 01308-050</p>
+                      <p className="hover:text-primary transition-colors">CEP: 01410-000</p>
                     </a>
                   </div>
                 </div>
