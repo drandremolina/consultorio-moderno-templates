@@ -37,8 +37,9 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
             "name": "Clínica Dr. André Molina",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Rua Exemplo, 123",
+              "streetAddress": "Alameda Ministro Rocha Azevedo, 38, sala 1201",
               "addressLocality": "São Paulo",
+              "postalCode": "01410-000",
               "addressRegion": "SP",
               "addressCountry": "BR"
             },
@@ -78,10 +79,10 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
           ],
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rua Exemplo, 123",
+            "streetAddress": "Alameda Ministro Rocha Azevedo, 38, sala 1201",
             "addressLocality": "São Paulo", 
             "addressRegion": "SP",
-            "postalCode": "01000-000",
+            "postalCode": "01410-000",
             "addressCountry": "BR"
           },
           "telephone": "+55-11-3258-3636",
