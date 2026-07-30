@@ -85,9 +85,9 @@ const Footer = () => {
               
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <a href="https://maps.app.goo.gl/aH8Fc7qk3miLDEro6" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  <p>Rua Adma Jafet, 74, cj 161</p>
-                  <p>Bela Vista, São Paulo - SP CEP 01308-050</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Alameda+Ministro+Rocha+Azevedo,+38+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP,+01410-000" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  <p>Alameda Ministro Rocha Azevedo, 38, sala 1201</p>
+                  <p>Bela Vista, São Paulo - SP CEP 01410-000</p>
                 </a>
               </div>
             </div>
