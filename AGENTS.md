@@ -1,0 +1,2 @@
+# Project rules
+- Contact destination regression tests live in `src/contact-links.test.ts` and run with `bun test src/contact-links.test.ts` so telephone, WhatsApp and structured contact values stay consistent.
