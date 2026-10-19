@@ -242,7 +242,7 @@ const TratamentoMelanoma = () => {
               <p className="text-xl mb-8 text-white/90">
                 Tratamento especializado e personalizado para melanoma com as abordagens mais modernas
               </p>
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-6" onClick={() => window.location.href = 'tel:+5511999999999'}>
+              <Button size="lg" variant="secondary" className="text-lg px-8 py-6" onClick={() => window.location.href = 'tel:+5511927468278'}>
                 <Phone className="mr-2 h-5 w-5" />
                 Entre em Contato
               </Button>

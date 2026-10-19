@@ -1,0 +1,2 @@
+# Project rules
+- Contact destination regression tests live in `tests/contact-links.test.js` and run with `bun test tests/contact-links.test.js` so telephone, WhatsApp and structured contact values stay consistent.

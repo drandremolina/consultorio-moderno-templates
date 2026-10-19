@@ -39,9 +39,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
-                    <a href="tel:01132583636" className="text-muted-foreground hover:text-primary transition-colors">(11) 3258-3636</a>
+                    <a href="tel:+5511927468278" className="text-muted-foreground hover:text-primary transition-colors">+55 11 92746-8278</a>
                     <br />
-                    <a href="https://wa.me/5511971644726" className="text-sm text-muted-foreground hover:text-primary transition-colors mt-1 inline-block">(11) 97164-4726 WhatsApp</a>
+                    <a href="https://wa.me/5511927468278" className="text-sm text-muted-foreground hover:text-primary transition-colors mt-1 inline-block">+55 11 92746-8278 WhatsApp</a>
                   </div>
                 </div>
               </CardContent>
@@ -116,13 +116,13 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     className="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-6 text-lg"
-                    onClick={() => window.location.href = 'https://wa.me/5511971644726'}
+                    onClick={() => window.location.href = 'https://wa.me/5511927468278'}
                   >
                     <MessageCircle className="h-5 w-5 mr-2" />
                     WhatsApp
                   </Button>
                   
-                  <a href="tel:01132583636">
+                  <a href="tel:+5511927468278">
                     <Button 
                       variant="outline" 
                       className="border-primary text-primary hover:bg-primary/5 rounded-full px-8 py-6 text-lg"

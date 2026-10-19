@@ -33,7 +33,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-base font-medium shadow-sm group"
-                onClick={() => window.location.href = 'https://wa.me/5511971644726'}
+                onClick={() => window.location.href = 'https://wa.me/5511927468278'}
               >
                 <Calendar className="h-5 w-5 mr-2" />
                 Agendar Consulta

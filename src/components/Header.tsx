@@ -14,11 +14,11 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-cyan-500" />
-              <a href="tel:01132583636" className="hover:text-cyan-500 transition-colors">(11) 3258-3636</a>
+              <a href="tel:+5511927468278" className="hover:text-cyan-500 transition-colors">+55 11 92746-8278</a>
             </div>
             <div className="flex items-center gap-2">
               <MessageCircle className="h-4 w-4 text-green-500" />
-              <a href="https://wa.me/5511971644726" className="hover:text-green-500 transition-colors">(11) 97164-4726</a>
+              <a href="https://wa.me/5511927468278" className="hover:text-green-500 transition-colors">+55 11 92746-8278</a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-cyan-500" />
@@ -45,7 +45,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511927468278" target="_blank" rel="noopener noreferrer">
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6">
                 Agendar Consulta
               </Button>
@@ -103,7 +103,7 @@ const Header = () => {
               <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="text-foreground hover:text-cyan-500 transition-colors font-medium">
                 Blog
               </Link>
-              <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511927468278" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 w-fit">
                   Agendar Consulta
                 </Button>

@@ -43,25 +43,25 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
               "addressRegion": "SP",
               "addressCountry": "BR"
             },
-            "telephone": "+55-11-3258-3636"
+            "telephone": "+5511927468278"
           },
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+55-11-3258-3636",
+              "telephone": "+5511927468278",
               "contactType": "appointment booking",
               "availableLanguage": "Portuguese"
             },
             {
               "@type": "ContactPoint", 
-              "telephone": "+55-11-97164-4726",
+              "telephone": "+5511927468278",
               "contactType": "customer service",
               "availableLanguage": "Portuguese"
             }
           ],
           "url": "https://drandremolina.lovable.app",
           "sameAs": [
-            "https://wa.me/5511971644726"
+            "https://wa.me/5511927468278"
           ]
         };
 
@@ -85,7 +85,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
             "postalCode": "01410-000",
             "addressCountry": "BR"
           },
-          "telephone": "+55-11-3258-3636",
+          "telephone": "+5511927468278",
           "url": "https://drandremolina.lovable.app",
           "founder": {
             "@type": "Person",
@@ -98,7 +98,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+55-11-3258-3636",
+            "telephone": "+5511927468278",
             "contactType": "appointment booking",
             "availableLanguage": "Portuguese"
           }
