@@ -1,5 +1,5 @@
 const WhatsAppButton = () => {
-  const phoneNumber = "5511971644726";
+  const phoneNumber = "5511927468278";
   const message = "Olá Dr. André Molina! Gostaria de agendar uma consulta de oncologia cutânea.";
   
   const handleWhatsAppClick = () => {
